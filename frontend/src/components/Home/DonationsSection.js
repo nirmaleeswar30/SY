@@ -24,7 +24,7 @@ const DonationsSection = () => {
             <h1 className="text-red-700 text-3xl font-bold">Donations</h1>
             <hr className="h-1 my-2 bg-red-800 w-full dark:bg-red-700 rounded-md" />
             
-            <p className="mt-4 text-gray-600 text-lg">
+            <p className="mt-4 text-gray-600 text-lg text-justify ">
               Sahaja Yoga meditation is offered free of charge across the globe to promote 
               spiritual growth, inner peace, and harmony. Every contribution, big or small, 
               directly supports our mission to spread peace and joy through Sahaja Yoga. 

@@ -8,6 +8,7 @@ import FreeSection from '../components/Home/FreeSection';
 import BenefitsSection from '../components/Home/BenefitsSection';
 import PublicProgramsSection from '../components/Home/PublicProgramsSection';
 import ContactUsSection from '../components/Home/ContactUsSection';
+import EventsSection from "../components/Home/EventsSection";
 
 
 const HomeContent = () => {
@@ -15,6 +16,7 @@ const HomeContent = () => {
       <>
         <WelcomeSection />
         <FeaturesSection />
+        <EventsSection/>
         <AboutSection />
         <DonationsSection />
         <SelfRealisationSection />

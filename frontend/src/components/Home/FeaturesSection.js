@@ -20,7 +20,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4 ">
       <div className="container max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {cards.map((card, index) => (
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
                 <img className={`${index === 0 ? 'w-20 h-20' : 'w-24 h-24'} mx-auto`} src={card.icon} alt="" />
               </div>
               <h3 className="text-3xl font-semibold mb-4" style={{ whiteSpace: 'pre-line' }}>{card.title}</h3>
-              <p className="text-gray-600 text-xl">{card.description}</p>
+              <p className="text-gray-600 text-xl text-justify ">{card.description}</p>
             </div>
           ))}
         </div>

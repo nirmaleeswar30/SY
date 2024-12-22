@@ -30,7 +30,7 @@ const AboutSection = () => {
                   SAHAJA YOGA
                 </h2>
                 <div className="read-more-container">
-                  <p className={`text-gray-700 leading-relaxed font-semibold text-base ${!isExpanded ? 'line-clamp-4' : ''}`}>
+                  <p className={`text-gray-700 leading-relaxed font-semibold text-justify text-base ${!isExpanded ? 'line-clamp-4' : ''}`}>
                     Sahaja Yoga is a simple meditation practice that nurtures an evolved spiritual personality through the awakening of the Kundalini, a process known as Self-Realization. Discovered by H.H. Shri Mataji Nirmala Devi in 1970, this awakening fulfills the universal goal shared by all religions. While the knowledge of Kundalini is ancient, it was historically kept secret and passed only from guru to disciple, as achieving Self-Realization was once extremely challenging. Shri Mataji made a breakthrough by connecting our Kundalini with the Spirit (Atma), through Self-Realization accessible to all humans for the first time in the history. This process brings physical, mental, and emotional balance as a natural outcome of Sahaja Yoga meditation. Self-Realization is the birthright of every human being, now made available to all at free of cost worldwide.
                   </p>
                   <button 

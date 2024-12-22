@@ -19,7 +19,7 @@ const WelcomeSection = () => {
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl" style={{ fontFamily: "'Kalam', cursive" }}>
                 WELCOME TO SAHAJA YOGA
               </h2>
-              <p className="mt-4 text-gray-600 text-lg">
+              <p className="mt-4 text-gray-600 text-lg text-justify ">
                 The time has come for all of you to get your self-realisation, by which your attention becomes enlightened, your health gets completely all right, your mental processes are sensible, but above all you stand in your present.
               </p>
               <div className="mt-8">
