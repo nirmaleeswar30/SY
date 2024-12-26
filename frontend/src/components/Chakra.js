@@ -142,7 +142,7 @@ const ChakrasPage = () => {
   };
 
   return (
-    <div className="bg-orange-100 min-h-screen pt-16">
+    <div className="bg-orange-100 min-h-screen">
       <main>
         <div className="max-w-7xl mx-auto px-4 py-12">
           {/* Heading Section */}

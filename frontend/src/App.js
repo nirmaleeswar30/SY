@@ -9,6 +9,7 @@ import Nadis from './components/Nadi';
 import CentersPage from './components/Our_Centers';
 import ContactPage from './components/Home/ContactUsSection';
 import Footer from './components/Footer';
+import Clearence from './components/Clearance';
 const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/nadis" element={<Nadis />} />
         <Route path="/centers" element={<CentersPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/clearence" element={<Clearence />} />
       </Routes>
       <Footer/>
     </div>
