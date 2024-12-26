@@ -3,7 +3,7 @@ import React from 'react';
 const Kundalini = () => {
   return (
     <div className="bg-orange-100">
-      <section className="mt-10 max-w-6xl mx-auto px-4 lg:px-0 py-12">
+      <section className="max-w-6xl mx-auto px-4 lg:px-0 py-12">
         {/* Heading */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-4xl font-medium text-red-600 mb-2">

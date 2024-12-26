@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const EventsSection = () => {
-  const [selectedMonth, setSelectedMonth] = useState("January 2025");
+  const [selectedMonth, setSelectedMonth] = useState("January");
 
   // Helper function to format date
   const formatDate = (date) => {
@@ -13,12 +13,12 @@ const EventsSection = () => {
   };
 
   // Helper function to get month and year
-  const getMonthAndYear = (date) => {
+  const getMonth = (date) => {
     const months = [
       "January", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December"
     ];
-    return `${months[date.getMonth()]} ${date.getFullYear()}`;
+    return `${months[date.getMonth()]}`;
   };
 
   const events = [
@@ -152,22 +152,22 @@ const EventsSection = () => {
   ];
 
   const months = [
-    "January 2025",
-    "February 2025",
-    "March 2025",
-    "April 2025",
-    "May 2025",
-    "June 2025",
-    "July 2025",
-    "August 2025",
-    "September 2025",
-    "October 2025",
-    "November 2025",
-    "December 2025",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   const filteredEvents = events.filter(
-    (event) => getMonthAndYear(event.date) === selectedMonth
+    (event) => getMonth(event.date) === selectedMonth
   );
 
   return (

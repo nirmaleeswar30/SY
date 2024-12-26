@@ -4,14 +4,20 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isChakraDropdownOpen, setIsChakraDropdownOpen] = useState(false);
   const location = useLocation();
+
+  const chakraLinks = [
+    { title: 'The Human Subtle System', path: '/subtle' },
+    { title: 'Seven Chakra', path: '/chakras' },
+    { title: 'Three Nadis', path: '/nadis' },
+    { title: 'Kundalini', path: '/kundalini' }
+  ];
 
   return (
     <>
-      {/* Navigation Bar */}
       <nav className="border-gray-200 bg-red-800 text-white">
         <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
-          {/* Logo Section */}
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
               src="https://res.cloudinary.com/dr8g09icb/image/upload/v1734200938/image_2_z4b0ex.png"
@@ -20,7 +26,6 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* Hamburger Menu Button */}
           <button
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -44,9 +49,7 @@ const Navbar = () => {
             </svg>
           </button>
 
-          {/* Right Section: Search and Language */}
           <div className="flex items-center md:order-2 space-x-2">
-            {/* Search Section */}
             <div className="relative hidden md:block mr-4">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
@@ -73,50 +76,48 @@ const Navbar = () => {
               />
             </div>
 
-            {/* Language Dropdown */}
             <div className="relative">
-                     <button
-                       type="button"
-                       className="inline-flex items-center font-medium justify-center px-3 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-white hover:text-black"
-                       onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                     >
-                       <svg
-                         className="w-5 h-5 rounded-full me-2"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 3900 3900"
-                         aria-hidden="true"
-                       >
-                         <path fill="#b22234" d="M0 0h7410v3900H0z" />
-                         <path
-                           d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
-                           stroke="#fff"
-                           strokeWidth="300"
-                         />
-                         <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-                       </svg>
-                       English
-                     </button>
-       
-                     {isDropdownOpen && (
-                       <div className="z-10 absolute right-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                         <ul className="py-2 text-sm text-gray-700">
-                           <li>
-                             <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                               English (US)
-                             </a>
-                           </li>
-                           <li>
-                             <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                               Tamil
-                             </a>
-                           </li>
-                         </ul>
-                       </div>
-                     )}
-                   </div>
-                 </div>
+              <button
+                type="button"
+                className="inline-flex items-center font-medium justify-center px-3 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-white hover:text-black"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                <svg
+                  className="w-5 h-5 rounded-full me-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 3900 3900"
+                  aria-hidden="true"
+                >
+                  <path fill="#b22234" d="M0 0h7410v3900H0z" />
+                  <path
+                    d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
+                    stroke="#fff"
+                    strokeWidth="300"
+                  />
+                  <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                </svg>
+                English
+              </button>
 
-          {/* Main Navigation */}
+              {isDropdownOpen && (
+                <div className="z-50 absolute right-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                  <ul className="py-2 text-sm text-gray-700">
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                        English (US)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                        Tamil
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+
           <div
             className={`${
               isMenuOpen ? 'block' : 'hidden'
@@ -144,15 +145,47 @@ const Navbar = () => {
                   Schedule
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/chakras"
-                  className={`block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${
-                    location.pathname === '/chakras' ? 'text-yellow-300' : ''
+              <li className="relative">
+                <button
+                  onClick={() => setIsChakraDropdownOpen(!isChakraDropdownOpen)}
+                  className={`flex items-center py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${
+                    chakraLinks.some(link => location.pathname === link.path) ? 'text-yellow-300' : ''
                   }`}
                 >
                   7 Chakras & Nadis
-                </Link>
+                  <svg
+                    className="w-2.5 h-2.5 ml-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                {isChakraDropdownOpen && (
+                  <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-48">
+                    <ul className="py-2 text-sm text-gray-700">
+                      {chakraLinks.map((link, index) => (
+                        <li key={index}>
+                          <Link
+                            to={link.path}
+                            className="block px-4 py-2 hover:bg-gray-100"
+                            onClick={() => setIsChakraDropdownOpen(false)}
+                          >
+                            {link.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </li>
               <li>
                 <Link

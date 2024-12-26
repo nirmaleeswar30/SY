@@ -10,7 +10,6 @@ import PublicProgramsSection from '../components/Home/PublicProgramsSection';
 import ContactUsSection from '../components/Home/ContactUsSection';
 import EventsSection from "../components/Home/EventsSection";
 
-
 const HomeContent = () => {
     return (
       <>
