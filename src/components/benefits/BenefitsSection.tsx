@@ -1,40 +1,23 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 interface BenefitCard {
-  title: string;
-  description: string;
+  key: string;  // Added key for translation lookup
 }
 
 const BenefitsSection: React.FC = () => {
+  const { t } = useTranslation();
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const benefits: BenefitCard[] = [
-    {
-      title: "Improved Mental, Physical, Emotional And Spiritual Health",
-      description: "Sahaja Yoga makes a person calm and peaceful, helping lead a more meaningful life to cope up easily and effectively with the situations, strains and stresses of life."
-    },
-    {
-      title: "Loving Family And Compassionate Society",
-      description: "The benefits of Sahaja Yoga accrue not only to the individual but also to society, to the nation and ultimately to the entire humanity."
-    },
-    {
-      title: "From Religion To Spirituality",
-      description: "Sahaja Yoga integrates all major religions of the world. Sahaja yoga is practiced by people irrespective of one's caste, creed, race, religion and nationality, worldwide, in over 130 countries."
-    },
-    {
-      title: "In Sahaja Yoga Follow Your Experience Not What We Say",
-      description: "Based on Vibratory Awareness attained after Self Realisation and establishment in Sahaja Yoga meditation, the seeker can judge the truth of vibrations themselves."
-    },
-    {
-      title: "Health Benefit As A Byproduct Of Kundalini Awakening",
-      description: "The seeker benefits through inner cure naturally as byproduct of Kundalini Awakening while improving harmony and love in family life and social relations."
-    },
-    {
-      title: "Discover Your Persona Free From Stress, Tension And Worries",
-      description: "One becomes courageous, confident, loving, peaceful and joyous and develops artistic talents. It is an entirely scientific experience with no scope for blind faith."
-    }
+    { key: 'mental' },
+    { key: 'family' },
+    { key: 'religion' },
+    { key: 'experience' },
+    { key: 'health' },
+    { key: 'persona' }
   ];
 
   const containerVariants = {
@@ -75,7 +58,7 @@ const BenefitsSection: React.FC = () => {
           animate={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Benefits of Sahaja Yoga
+          {t('benefits.title')}
         </motion.h1>
 
         <motion.p 
@@ -84,7 +67,7 @@ const BenefitsSection: React.FC = () => {
           animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Shri Mataji Nirmala Devi transformed lives through en masse Kundalini Awakening. For more than forty years, Shri Mataji traveled globally, offering free public lectures and the experience of self-realisation to all, regardless of race, caste, creed, religion or financial status. She not only enabled people to pass this valuable experience to others free of cost, but taught them the meditation technique necessary to sustain it known as Sahaja Yoga.
+          {t('benefits.description')}
         </motion.p>
 
         <motion.div 
@@ -93,9 +76,9 @@ const BenefitsSection: React.FC = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {benefits.map((benefit, index) => (
+          {benefits.map((benefit) => (
             <motion.div
-              key={index}
+              key={benefit.key}
               className="bg-white rounded-lg shadow-lg p-6 cursor-pointer"
               variants={cardVariants}
               whileHover={{ 
@@ -106,10 +89,10 @@ const BenefitsSection: React.FC = () => {
               whileTap={{ scale: 0.98 }}
             >
               <h3 className="text-xl font-bold text-red-600 mb-4">
-                {benefit.title}
+                {t(`benefits.cards.${benefit.key}.title`)}
               </h3>
               <p className="text-gray-600">
-                {benefit.description}
+                {t(`benefits.cards.${benefit.key}.description`)}
               </p>
             </motion.div>
           ))}
@@ -129,7 +112,7 @@ const BenefitsSection: React.FC = () => {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            CLICK HERE TO VIEW MORE BENEFITS
+            {t('benefits.viewMoreButton')}
           </motion.button>
         </motion.div>
       </div>

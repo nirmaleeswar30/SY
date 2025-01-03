@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import NavbarSearch from './NavbarSearch';
+import { useTranslation } from 'react-i18next';
+import { useLanguage } from '../hooks/useLanguage';
 
 interface ChakraLink {
     title: string;
@@ -14,24 +16,26 @@ interface ResourceLink {
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
     const [isChakraDropdownOpen, setIsChakraDropdownOpen] = useState<boolean>(false);
     const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState<boolean>(false);
     const location = useLocation();
 
+    const { t } = useTranslation();
+    const { currentLanguage, changeLanguage } = useLanguage();
+
     const chakraLinks: ChakraLink[] = [
-        { title: 'The Human Subtle System', path: '/subtle' },
-        { title: 'Seven Chakra', path: '/chakras' },
-        { title: 'Three Nadis', path: '/nadis' },
-        { title: 'Kundalini', path: '/kundalini' }
+        { title: t('chakras.subtle'), path: '/subtle' },
+        { title: t('chakras.sevenChakras'), path: '/chakras' },
+        { title: t('chakras.threeNadis'), path: '/nadis' },
+        { title: t('chakras.kundalini'), path: '/kundalini' }
     ];
 
     const resourceLinks: ResourceLink[] = [
-        { title: 'Books', path: '/resources/books' },
-        { title: 'Speeches', path: '/resources/speeches' },
-        { title: 'Bhajans', path: '/resources/bhajans' },
-        { title: 'Photos', path: '/resources/gallery' },
-        { title: 'Sahaj Miracles', path: '/resources/sahaj_miracles' },
+        { title: t('resources.books'), path: '/resources/books' },
+        { title: t('resources.speeches'), path: '/resources/speeches' },
+        { title: t('resources.bhajans'), path: '/resources/bhajans' },
+        { title: t('resources.photos'), path: '/resources/gallery' },
+        { title: t('resources.miracles'), path: '/resources/sahaj_miracles' },
     ];
 
     return (
@@ -76,45 +80,19 @@ const Navbar: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="relative">
+                        <div className="relative flex space-x-2">
                             <button
-                                type="button"
-                                className="inline-flex items-center font-medium justify-center px-3 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-white hover:text-black"
-                                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                onClick={() => changeLanguage('en')}
+                                className={`px-3 py-2 text-sm font-medium rounded-lg ${currentLanguage === 'en' ? 'bg-gray-100 text-black' : 'text-white'}`}
                             >
-                                <svg
-                                    className="w-5 h-5 rounded-full me-2"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 3900 3900"
-                                    aria-hidden="true"
-                                >
-                                    <path fill="#b22234" d="M0 0h7410v3900H0z" />
-                                    <path
-                                        d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
-                                        stroke="#fff"
-                                        strokeWidth="300"
-                                    />
-                                    <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-                                </svg>
                                 English
                             </button>
-
-                            {isDropdownOpen && (
-                                <div className="z-50 absolute right-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                    <ul className="py-2 text-sm text-gray-700">
-                                        <li>
-                                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                                English (US)
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                                Tamil
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            )}
+                            <button
+                                onClick={() => changeLanguage('ta')}
+                                className={`px-3 py-2 text-sm font-medium rounded-lg ${currentLanguage === 'ta' ? 'bg-gray-100 text-black' : 'text-white'}`}
+                            >
+                                தமிழ்
+                            </button>
                         </div>
                     </div>
 
@@ -130,7 +108,7 @@ const Navbar: React.FC = () => {
                                     className={`block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${location.pathname === '/' ? 'text-yellow-300' : ''
                                         }`}
                                 >
-                                    Home
+                                    {t('nav.home')}
                                 </Link>
                             </li>
                             <li>
@@ -139,7 +117,7 @@ const Navbar: React.FC = () => {
                                     className={`block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${location.pathname === '/schedule' ? 'text-yellow-300' : ''
                                         }`}
                                 >
-                                    Schedule
+                                    {t('nav.schedule')}
                                 </Link>
                             </li>
                             <li className="relative">
@@ -148,7 +126,7 @@ const Navbar: React.FC = () => {
                                     className={`flex items-center py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${chakraLinks.some(link => location.pathname === link.path) ? 'text-yellow-300' : ''
                                         }`}
                                 >
-                                    7 Chakras & Nadis
+                                    {t('nav.chakras')}
                                     <svg
                                         className="w-2.5 h-2.5 ml-2.5"
                                         aria-hidden="true"
@@ -166,9 +144,7 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </button>
                                 {isChakraDropdownOpen && (
-                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48"
-                                    onMouseLeave={() => setIsChakraDropdownOpen(false)}
-                                    >
+                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
                                         <ul className="py-2 text-sm text-gray-700">
                                             {chakraLinks.map((link, index) => (
                                                 <li key={index}>
@@ -191,7 +167,7 @@ const Navbar: React.FC = () => {
                                     className={`flex items-center py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${resourceLinks.some(link => location.pathname.startsWith(link.path)) ? 'text-yellow-300' : ''
                                         }`}
                                 >
-                                    Resources
+                                    {t('nav.resources')}
                                     <svg
                                         className="w-2.5 h-2.5 ml-2.5"
                                         aria-hidden="true"
@@ -209,9 +185,7 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </button>
                                 {isResourcesDropdownOpen && (
-                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48"
-                                    onMouseLeave={() => setIsResourcesDropdownOpen(false)}
-                                    >
+                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
                                         <ul className="py-2 text-sm text-gray-700">
                                             {resourceLinks.map((link, index) => (
                                                 <li key={index}>
@@ -234,16 +208,7 @@ const Navbar: React.FC = () => {
                                     className={`block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${location.pathname === '/centers' ? 'text-yellow-300' : ''
                                         }`}
                                 >
-                                    Our Centers
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="/clearence"
-                                    className={`block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${location.pathname === '/clearence' ? 'text-yellow-300' : ''
-                                        }`}
-                                >
-                                    Clearence
+                                    {t('nav.centers')}
                                 </Link>
                             </li>
                             <li>
@@ -252,7 +217,7 @@ const Navbar: React.FC = () => {
                                     className={`block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${location.pathname === '/contact' ? 'text-yellow-300' : ''
                                         }`}
                                 >
-                                    Contact
+                                    {t('nav.contact')}
                                 </Link>
                             </li>
                         </ul>

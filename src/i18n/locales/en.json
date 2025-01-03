@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Home",
+    "schedule": "Schedule",
+    "centers": "Our Centers",
+    "clearance": "Clearance",
+    "contact": "Contact",
+    "chakras": "7 Chakras & Nadis",
+    "resources": "Resources"
+  },
+  "resources": {
+    "books": "Books",
+    "speeches": "Speeches",
+    "bhajans": "Bhajans",
+    "photos": "Photos",
+    "miracles": "Sahaj Miracles"
+  },
+  "chakras": {
+    "subtle": "The Human Subtle System",
+    "sevenChakras": "Seven Chakra",
+    "threeNadis": "Three Nadis",
+    "kundalini": "Kundalini"
+  },
+  "welcome": {
+    "title": "WELCOME TO SAHAJA YOGA",
+    "subtitle": "The time has come for all of you to get your self-realisation",
+    "description": "by which your attention becomes enlightened, your health gets completely all right, your mental processes are sensible, but above all you stand in your present.",
+    "sessions": {
+      "title": "Daily Free Meditation Sessions",
+      "morning": {
+        "title": "Morning Session",
+        "time": "6:00 AM - 7:00 AM"
+      },
+      "beginner": {
+        "title": "For Beginners",
+        "time": "7:00 PM - 8:00 PM"
+      },
+      "join": "Join",
+      "features": {
+        "items": [
+          {
+            "icon": "https://res.cloudinary.com/dodaypz5o/image/upload/v1734117524/meditation-meditate-mindful-mindfulness-svgrepo-com_crwhqj.svg",
+            "title": "Everyone Needs Meditation",
+            "description": "Today the humanity is shaken up and going through unprecedented imbalances. Sahaja Yoga gives the solution"
+          },
+          {
+            "icon": "https://res.cloudinary.com/dodaypz5o/image/upload/v1734117151/lotus-svgrepo-com_1_gtcxyp.svg",
+            "title": "Sahaja Yoga is Transformational",
+            "description": "Sahaja Yoga gives instant experience in hands, fingers and human body which is effortless and spontaneous. With this experience, you gain a new dimension in your lifestyle."
+          },
+          {
+            "icon": "https://res.cloudinary.com/dodaypz5o/image/upload/v1734118671/plant-on-a-hand-svgrepo-com_1_hg0g3r.svg",
+            "title": "Unlock The Benefits Today",
+            "description": "Sahaj Meditation makes you know thyself. You will experience stress reduction, enhanced concentration, improved memory and spiritual growth. Get started today!"
+          }
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "About Sahaja Yoga",
+    "description": "Sahaja Yoga is a simple meditation practice that nurtures an evolved spiritual personality through the awakening of the Kundalini, a process known as Self-Realization. Discovered by H.H. Shri Mataji Nirmala Devi in 1970, this awakening fulfills the universal goal shared by all religions. While the knowledge of Kundalini is ancient, it was historically kept secret and passed only from guru to disciple, as achieving Self-Realization was once extremely challenging. Shri Mataji made a breakthrough by connecting our Kundalini with the Spirit (Atma), through Self-Realization accessible to all humans for the first time in the history. This process brings physical, mental, and emotional balance as a natural outcome of Sahaja Yoga meditation. Self-Realization is the birthright of every human being, now made available to all at free of cost worldwide.",
+    "learnMore": "Learn More",
+    "meditation": {
+      "altText": "Meditation practice"
+    }
+  },
+  "benefits": {
+    "title": "Benefits of Sahaja Yoga",
+    "description": "Shri Mataji Nirmala Devi transformed lives through en masse Kundalini Awakening. For more than forty years, Shri Mataji traveled globally, offering free public lectures and the experience of self-realisation to all, regardless of race, caste, creed, religion or financial status. She not only enabled people to pass this valuable experience to others free of cost, but taught them the meditation technique necessary to sustain it known as Sahaja Yoga.",
+    "viewMoreButton": "CLICK HERE TO VIEW MORE BENEFITS",
+    "cards": {
+      "mental": {
+        "title": "Improved Mental, Physical, Emotional And Spiritual Health",
+        "description": "Sahaja Yoga makes a person calm and peaceful, helping lead a more meaningful life to cope up easily and effectively with the situations, strains and stresses of life."
+      },
+      "family": {
+        "title": "Loving Family And Compassionate Society",
+        "description": "The benefits of Sahaja Yoga accrue not only to the individual but also to society, to the nation and ultimately to the entire humanity."
+      },
+      "religion": {
+        "title": "From Religion To Spirituality",
+        "description": "Sahaja Yoga integrates all major religions of the world. Sahaja yoga is practiced by people irrespective of one's caste, creed, race, religion and nationality, worldwide, in over 130 countries."
+      },
+      "experience": {
+        "title": "In Sahaja Yoga Follow Your Experience Not What We Say",
+        "description": "Based on Vibratory Awareness attained after Self Realisation and establishment in Sahaja Yoga meditation, the seeker can judge the truth of vibrations themselves."
+      },
+      "health": {
+        "title": "Health Benefit As A Byproduct Of Kundalini Awakening",
+        "description": "The seeker benefits through inner cure naturally as byproduct of Kundalini Awakening while improving harmony and love in family life and social relations."
+      },
+      "persona": {
+        "title": "Discover Your Persona Free From Stress, Tension And Worries",
+        "description": "One becomes courageous, confident, loving, peaceful and joyous and develops artistic talents. It is an entirely scientific experience with no scope for blind faith."
+      }
+    }
+  }
+}
