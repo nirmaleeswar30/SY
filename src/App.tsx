@@ -22,6 +22,8 @@ import Our_CentersPage from './components/Our_Centers';
 import ClearancePage from './components/Clearence';
 import Books from './components/Books';
 import { SpeechBrowser } from './components/SpeechBrowser';
+import HomePage from './pages/HomePage';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -73,6 +75,9 @@ function App() {
               <Route path="/clearence" element={<ClearancePage />} />
               <Route path="/resources/books" element={<Books />} />
 	            <Route path="/resources/speeches" element={<SpeechBrowser />} />
+              <Route path="/resources/gallery" element={<HomePage />} />
+              <Route path="/resources/gallery/:id" element={<GalleryPage />} />
+
             </Routes>
             <Footer />
           </>

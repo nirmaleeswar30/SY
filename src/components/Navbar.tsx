@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
         { title: 'Books', path: '/resources/books' },
         { title: 'Speeches', path: '/resources/speeches' },
         { title: 'Bhajans', path: '/resources/bhajans' },
-        { title: 'Photos', path: '/resources/photos' },
+        { title: 'Photos', path: '/resources/gallery' },
         { title: 'Sahaj Miracles', path: '/resources/sahaj_miracles' },
     ];
 
@@ -166,7 +166,9 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </button>
                                 {isChakraDropdownOpen && (
-                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
+                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48"
+                                    onMouseLeave={() => setIsChakraDropdownOpen(false)}
+                                    >
                                         <ul className="py-2 text-sm text-gray-700">
                                             {chakraLinks.map((link, index) => (
                                                 <li key={index}>
@@ -207,7 +209,9 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </button>
                                 {isResourcesDropdownOpen && (
-                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
+                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48"
+                                    onMouseLeave={() => setIsResourcesDropdownOpen(false)}
+                                    >
                                         <ul className="py-2 text-sm text-gray-700">
                                             {resourceLinks.map((link, index) => (
                                                 <li key={index}>
