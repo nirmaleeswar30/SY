@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 
-const SelfRealisationSection = () => {
+const SelfRealisationSection: React.FC = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -17,7 +19,8 @@ const SelfRealisationSection = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl text-red-700 font-bold text-center mb-12"
         >
-          Self Realisation And Kundalini Awakening, <br />Experience Now
+          {t('selfRealisation.title')} <br />
+          {t('selfRealisation.experienceNow')}
         </motion.h1>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -29,19 +32,19 @@ const SelfRealisationSection = () => {
           >
             <blockquote className="text-gray-700 italic">
               <p className="mb-4">
-                "Now the time has come; the blossom time has come for many people to get Realisation. They have to get it. This is predicted, the time has come that you all have to get Realisation."
+                {t('selfRealisation.quote1.text')}
               </p>
               <footer className="text-sm">
-                - H.H. Shri Mataji Nirmala Devi, 14.08.1980, Preston, UK.
+                - {t('selfRealisation.quote1.author')}, {t('selfRealisation.quote1.location')}
               </footer>
             </blockquote>
 
             <blockquote className="text-gray-700 italic">
               <p className="mb-4">
-                "The truth is, first one, that you are not this body, this mind, these conditionings or ego but you are pure spirit and the second truth is that there is an all-pervading power of divine love which works out all the living work."
+                {t('selfRealisation.quote2.text')}
               </p>
               <footer className="text-sm">
-                - H.H. Shri Mataji Nirmala Devi, 24.07.1992, Public Talk, Paris Gaveau France.
+                - {t('selfRealisation.quote2.author')}, {t('selfRealisation.quote2.location')}
               </footer>
             </blockquote>
           </motion.div>
@@ -64,7 +67,7 @@ const SelfRealisationSection = () => {
             </div>
 
             <p className="text-sm font-semibold text-gray-600">
-              Note: The above video is just an animated representation of the awakening of Kundalini energy, to experience. Please, Click the below to experience your Self Realisation.
+              {t('selfRealisation.videoNote')}
             </p>
           </motion.div>
         </div>
@@ -81,7 +84,7 @@ const SelfRealisationSection = () => {
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6 }}
           >
-            CLICK HERE TO EXPERIENCE YOUR SELF REALISATION
+            {t('selfRealisation.experienceButton')}
           </motion.a>
         </div>
       </div>

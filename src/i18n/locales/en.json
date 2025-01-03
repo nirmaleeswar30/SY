@@ -95,5 +95,268 @@
         "description": "One becomes courageous, confident, loving, peaceful and joyous and develops artistic talents. It is an entirely scientific experience with no scope for blind faith."
       }
     }
-  }
+  },
+  "contact": {
+    "title": "Connect With Us",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Share your thoughts...",
+    "sendButton": "Send Message",
+    "successMessage": "Message sent successfully!"
+  },
+  "events": {
+    
+    "title": "Event Schedule 2025",
+    "subtitle": "Join us for these transformative events",
+    "dateTime": "{{date}} at {{time}}",
+    "mentor": "Mentor: {{mentor}}",
+    "location": "Location: {{location}}",
+    "venue": "Venue: {{venue}}",
+    "button": "Click Here",
+    "noEvents": "No events scheduled for {{month}}.",
+
+    "dates": {
+      "march2": "March 2",
+      "march21": "March 21",
+      "april6": "April 6",
+      "april20": "April 20",
+      "may4": "May 4",
+      "june8": "June 8",
+      "july13": "July 13",
+      "august24": "August 24",
+      "august30": "August 30",
+      "september28": "September 28",
+      "october19": "October 19",
+      "november30": "November 30",
+      "december25": "December 25"
+    },
+    "titles": {
+      "mahashivaratri": "Mahashivaratri Puja",
+      "birthday": "Birthday Puja",
+      "rama": "Shri Rama Puja",
+      "easter": "Easter Puja",
+      "sahasrara": "Sahasrara Puja",
+      "adishakti": "Shri Adi Shakti Puja",
+      "guru": "Shri Adi Guru Puja",
+      "krishna": "Shri Krishna Puja",
+      "ganesha": "Shri Ganesha Puja",
+      "navaratri": "Navaratri Puja",
+      "diwali": "Diwali Puja",
+      "bhairava": "Shri Bhairava Puja",
+      "christmas": "Christmas Puja"
+    },
+    "times": {
+      "morning": "10:00 AM"
+    },
+    "mentors": {
+      "sahajayoga": "Sahaja Yoga"
+    },
+    "locations": {
+      "brazil": "Brazil",
+      "india": "India",
+      "asia": "Asia",
+      "australia": "Australia",
+      "cabella": "Cabella",
+      "france": "France",
+      "tanzania": "Tanzania"
+    },
+    "venues": {
+      "brazilCenter": "Brazil Center",
+      "indiaCenter": "India Center",
+      "asiaCenter": "Asian Countries Center",
+      "australiaCenter": "Australia Center",
+      "italyCenter": "Italy Center",
+      "franceCenter": "France Center",
+      "africaCenter": "Africa Center"
+    }
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "donation": {
+    "title": "Support Our Mission",
+    "description": "Sahaja Yoga meditation is offered free of charge across the globe to promote spiritual growth, inner peace, and harmony. Every contribution, big or small, directly supports our mission to spread peace and joy through Sahaja Yoga. Donations are voluntary and deeply appreciated.",
+    "quote": "\"By giving, we receive the joy of sharing.\"",
+    "amount": "Donation Amount",
+    "button": "Donate Now",
+    "imageAlt": "Donation"
+  },
+  "selfRealisation": {
+    "title": "Self Realisation And Kundalini Awakening,",
+    "experienceNow": "Experience Now",
+    "quote1": {
+      "text": "Now the time has come; the blossom time has come for many people to get Realisation. They have to get it. This is predicted, the time has come that you all have to get Realisation.",
+      "author": "H.H. Shri Mataji Nirmala Devi",
+      "location": "14.08.1980, Preston, UK"
+    },
+    "quote2": {
+      "text": "The truth is, first one, that you are not this body, this mind, these conditionings or ego but you are pure spirit and the second truth is that there is an all-pervading power of divine love which works out all the living work.",
+      "author": "H.H. Shri Mataji Nirmala Devi",
+      "location": "24.07.1992, Public Talk, Paris Gaveau France"
+    },
+    "videoNote": "Note: The above video is just an animated representation of the awakening of Kundalini energy, to experience. Please, Click the below to experience your Self Realisation.",
+    "experienceButton": "CLICK HERE TO EXPERIENCE YOUR SELF REALISATION"
+  },
+  "publicPrograms": {
+    "title": "Contact Us For Free Public Programs",
+    "description": "All public programs globally are entirely free of charge and always open to the public. Those who experience the peace and joy of this new state naturally have the desire to share this discovery with as many people as possible. There are many seminars, workshops and programs conducted weekly around the world.",
+    "contactUs": "Contact Us →",
+    "programs": {
+      "rural": {
+        "title": "Public Program in Rural Schools",
+        "description": "Ask for Weekly Free Meditation in Schools"
+      },
+      "corporate": {
+        "title": "Corporate Stress Relief Programs",
+        "description": "Balancing Mind, Body & Spirit"
+      },
+      "private": {
+        "title": "Private School Programs",
+        "description": "Better memory & concentration"
+      },
+      "personality": {
+        "title": "Personality Development",
+        "description": "Improve productivity through meditation"
+      },
+      "bank": {
+        "title": "Bank Employee Programs",
+        "description": "Stress management for banking sector"
+      },
+      "primary": {
+        "title": "Primary School Programs",
+        "description": "Building moral and integrated education"
+      }
+    }
+  },
+  "centers": {
+    "title": "Our Centers",
+    "subtitle": "Find a meditation center near you",
+    "searchPlaceholder": "Search by city or contact person...",
+    "location": "Location",
+    "time": "Time",
+    "contactPerson": "Contact Person",
+    "phoneNumber": "Phone Number"
+  },
+  "days": {
+    "all": "All",
+    "Sunday": "Sunday",
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "Saturday": "Saturday"
+  },
+  "locations": {
+    "Chennai_TNagar_Main_Center": "Chennai - T.Nagar (Main Center)",
+    "Chennai_Mylapore": "Chennai - Mylapore",
+    "Chennai_Thiruvanmiyur": "Chennai - Thiruvanmiyur",
+    "Chennai_Chrompet": "Chennai - Chrompet",
+    "Chennai_Villivakkam": "Chennai - Villivakkam",
+    "Chennai_Anna_Nagar": "Chennai - Anna Nagar",
+    "Chennai_Velachery": "Chennai - Velachery",
+    "Chennai_Virugambakkam": "Chennai - Virugambakkam",
+    "Chennai_Chetpet": "Chennai - Chetpet",
+    "Chennai_Adyar": "Chennai - Adyar",
+    "Chennai_Thoraipakkam": "Chennai - Thoraipakkam",
+    "Chennai_Ambattur": "Chennai - Ambattur",
+    "Chennai_Perumbakkam": "Chennai - Perumbakkam",
+    "Chennai_Perungalathur": "Chennai - Perungalathur",
+    "Chennai_Valasaravakkam": "Chennai - Valasaravakkam",
+    "Chennai_Pattipulam": "Chennai - Pattipulam",
+    "Chengapattu": "Chengapattu",
+    "Arakkonam": "Arakkonam",
+    "Acharapakkam": "Acharapakkam",
+    "Kadamalaiputhur": "Kadamalaiputhur",
+    "Perumbair_Kandikai": "Perumbair Kandikai",
+    "Puducherry": "Puducherry",
+    "Hosur": "Hosur",
+    "Erode": "Erode",
+    "Salem": "Salem",
+    "Tirupur": "Tirupur",
+    "Udumalaipettai": "Udumalaipettai",
+    "Coimbatore": "Coimbatore",
+    "Pollachi": "Pollachi",
+    "Theni": "Theni",
+    "Trichy": "Trichy",
+    "Neyveli": "Neyveli",
+    "Karaikudi": "Karaikudi",
+    "Dindigul": "Dindigul",
+    "Madurai": "Madurai",
+    "Melur": "Melur",
+    "Kovilpatti_Vanaramutti": "Kovilpatti - Vanaramutti"
+  },
+  "times": {
+  "Sunday_at_10_00_AM": "Sunday at 10:00 AM",
+  "Friday_at_06_30_PM": "Friday at 06:30 PM",
+  "Saturday_at_06_00_PM": "Saturday at 06:00 PM",
+  "Wednesday_at_06_30_PM": "Wednesday at 06:30 PM",
+  "Saturday_at_05_00_PM": "Saturday at 05:00 PM",
+  "Sunday_at_06_00_PM": "Sunday at 06:00 PM",
+  "Saturday_at_10_00_AM": "Saturday at 10:00 AM",
+  "Saturday_at_05_30_PM": "Saturday at 05:30 PM",
+  "Monday_at_06_00_PM": "Monday at 06:00 PM",
+  "Sunday_at_05_00_PM": "Sunday at 05:00 PM",
+  "Sunday_at_10_30_PM": "Sunday at 10:30 PM",
+  "Sunday_at_11_00_AM": "Sunday at 11:00 AM",
+  "Tuesday_at_11_00_AM": "Tuesday at 11:00 AM",
+  "Sunday_at_10_30_AM": "Sunday at 10:30 AM"
+},
+
+  "contactPersons": {
+  "Mr_Manivannan": "Mr. Manivannan",
+  "Mrs_Mathangi": "Mrs. Mathangi",
+  "Mr_Unnikrishnan": "Mr. Unnikrishnan",
+  "Mrs_Nandhini": "Mrs. Nandhini",
+  "Mr_Venkatesh": "Mr. Venkatesh",
+  "Mrs_Chithra": "Mrs. Chithra",
+  "Mr_Govindraj": "Mr. Govindraj",
+  "Mrs_Geetha": "Mrs. Geetha",
+  "Mrs_Minati": "Mrs. Minati",
+  "Mrs_Jayashri": "Mrs. Jayashri",
+  "Mr_Arun_Chakravarthy": "Mr. Arun Chakravarthy",
+  "Mrs_Latha": "Mrs. Latha",
+  "Priyanka": "Priyanka",
+  "Mr_Rajasekar": "Mr. Rajasekar",
+  "Mrs_Visalakshi": "Mrs. Visalakshi",
+  "Ms_Ashika": "Ms. Ashika",
+  "Mrs_Gajaladakmi": "Mrs. Gajaladakmi",
+  "Mr_Saravanan": "Mr. Saravanan",
+  "Mrs_Jayachitra": "Mrs. Jayachitra",
+  "Mrs_Kamatchi": "Mrs. Kamatchi",
+  "Mrs_Sivakami": "Mrs. Sivakami",
+  "Mrs_Manimozhi": "Mrs. Manimozhi",
+  "Mr_Kirubakaran": "Mr. Kirubakaran",
+  "Mrs_Rajeshwari": "Mrs. Rajeshwari",
+  "Mrs_Sakshi": "Mrs. Sakshi",
+  "Mrs_Anitha": "Mrs. Anitha",
+  "Mr_Vivek": "Mr. Vivek",
+  "Mrs_Chandra_Sankara_Gomathi": "Mrs. Chandra Sankara Gomathi",
+  "Mr_Ramachandran": "Mr. Ramachandran",
+  "Mr_Karthik_Raj": "Mr. Karthik Raj",
+  "Mr_Kannapan": "Mr. Kannapan",
+  "Mrs_Prathiba": "Mrs. Prathiba",
+  "Mr_Muthuramlingam": "Mr. Muthuramlingam",
+  "Mr_Kandeeban": "Mr. Kandeeban",
+  "Mrs_Nalini": "Mrs. Nalini",
+  "Mrs_Sakthi": "Mrs. Sakthi",
+  "Mrs_Manimegalai": "Mrs. Manimegalai",
+  "Mr_Murali": "Mr. Murali",
+  "Mrs_Jayashankari": "Mrs. Jayashankari"
+}
+
 }

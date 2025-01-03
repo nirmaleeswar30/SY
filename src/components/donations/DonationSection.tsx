@@ -2,8 +2,10 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Heart, CreditCard } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const DonationSection = () => {
+  const { t } = useTranslation();
   const [amount, setAmount] = useState('');
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -25,19 +27,20 @@ const DonationSection = () => {
             transition={{ duration: 0.6 }}
             className="lg:w-1/2 pt-28 sm:p-20"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Support Our Mission</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+              {t('donation.title', 'Support Our Mission')}
+            </h2>
             <p className="text-lg text-gray-600 mb-6 text-justify">
-            Sahaja Yoga meditation is offered free of charge across the globe to promote 
-              spiritual growth, inner peace, and harmony. Every contribution, big or small, 
-              directly supports our mission to spread peace and joy through Sahaja Yoga. 
-              Donations are voluntary and deeply appreciated.
-              <p className='font-semibold text-red-900'>"By giving, we receive the joy of sharing."</p>
+              {t('donation.description', 'Sahaja Yoga meditation is offered free of charge across the globe to promote spiritual growth, inner peace, and harmony. Every contribution, big or small, directly supports our mission to spread peace and joy through Sahaja Yoga. Donations are voluntary and deeply appreciated.')}
+              <p className='font-semibold text-red-900'>
+                {t('donation.quote', '"By giving, we receive the joy of sharing."')}
+              </p>
             </p>
             
             <form onSubmit={handleDonate} className="space-y-6">
               <div>
-                <label htmlFor="amount" className="block text-xl font-bold text-gray-700 mb-2 ">
-                  Donation Amount
+                <label htmlFor="amount" className="block text-xl font-bold text-gray-700 mb-2">
+                  {t('donation.amount', 'Donation Amount')}
                 </label>
                 <div className="mt-1 relative rounded-xl shadow-lg overflow-hidden">
                   <input
@@ -60,7 +63,7 @@ const DonationSection = () => {
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-sm text-white bg-primary hover:bg-primary-dark transition"
               >
                 <CreditCard className="w-5 h-5 mr-2" />
-                Donate Now
+                {t('donation.button', 'Donate Now')}
               </button>
             </form>
           </motion.div>
@@ -73,7 +76,7 @@ const DonationSection = () => {
           >
             <img
               src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Donation"
+              alt={t('donation.imageAlt', 'Donation')}
               className="rounded-lg shadow-2xl"
             />
           </motion.div>
