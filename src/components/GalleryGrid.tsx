@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ImageModal } from './ImageModal';
+import { useTranslation } from 'react-i18next'; // Import the translation hook
 
 interface GalleryGridProps {
   images: string[];
@@ -7,6 +8,7 @@ interface GalleryGridProps {
 }
 
 export function GalleryGrid({ images, title }: GalleryGridProps) {
+  const { t } = useTranslation(); // Use the translation hook
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (

@@ -24,6 +24,10 @@ import Books from './components/Books';
 import { SpeechBrowser } from './components/SpeechBrowser';
 import HomePage from './pages/HomePage';
 import GalleryPage from './pages/GalleryPage';
+import Index from './pages/Index';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,6 +41,7 @@ function App() {
   }, []);
 
   return (
+   <QueryClientProvider client={queryClient}> 
     <Router>
       <div className="min-h-screen bg-white">
         <AnimatePresence>
@@ -77,7 +82,7 @@ function App() {
 	            <Route path="/resources/speeches" element={<SpeechBrowser />} />
               <Route path="/resources/gallery" element={<HomePage />} />
               <Route path="/resources/gallery/:id" element={<GalleryPage />} />
-
+              <Route path="/resources/sahaj_miracles" element={<Index />} /> 
             </Routes>
             <Footer />
           </>
@@ -85,6 +90,7 @@ function App() {
         
       </div>
     </Router>
+    </QueryClientProvider>
   );
 }
 

@@ -3,7 +3,7 @@
     "home": "Home",
     "schedule": "Schedule",
     "centers": "Our Centers",
-    "clearance": "Clearance",
+    "clearence": "Clearence",
     "contact": "Contact",
     "chakras": "7 Chakras & Nadis",
     "resources": "Resources"
@@ -16,26 +16,91 @@
     "miracles": "Sahaj Miracles"
   },
   "chakras": {
+    "title": "The Seven Chakras",
     "subtle": "The Human Subtle System",
-    "sevenChakras": "Seven Chakra",
-    "threeNadis": "Three Nadis",
+    "subtitle": "Explore the fine structure of chakras and their qualities",
+    "location": "Location",
+    "qualities": "Qualities",
+    "benefits": "Benefits",
+    "assessment": "Assessment",
+    "balance": "Balance",
+    "ancientKnowledge": "Ancient Knowledge of our Roots - Chakras Qualities",
+    "subtleSystemDescription": "Inside every human being there is a network of nerves and sensory organs that interprets the outside physical world. At the same time, within us resides a subtle system of channels (nadis) and centers of energy (chakras) which look after our physical, intellectual, emotional and spiritual being. Each of the seven chakras has several spiritual qualities. These qualities are intact within us, and even though they might not always be manifest, they can never be destroyed. When the Kundalini is awakened, these qualities start manifesting spontaneously and express themselves in our life. Thus, through regular meditation, we become automatically very dynamic, creative, confident and at the same time very humble, loving and compassionate. It is a process which starts to develop by itself when the Kundalini rises and starts to nourish our chakras.",
+    "threeNadis": "The Nadi(s) or The Three Channels",
+    "threeNadisDescription": "The human subtle system rides on the Three Channels – the Left, The Right, & The Central. The left channel (blue), or the Left Sympathetic Nervous System, corresponds to our past, emotions, desires. Its termination is the superego, which is the storehouse of all our memories, habits and conditionings. The right channel (yellow), or the Right Sympathetic Nervous System, corresponds to our actions and planning, to our physical and mental activity. Its termination is the ego, which gives us the idea of 'I'-ness, the sense that we are separate from the world. The central channel, or the Para-Sympathetic Nervous System, is the channel of ascent, it is the power which sustains our evolution and guides us, consciously or unconsciously, towards the higher awareness of the Sahastrara (seventh chakra).",
+    "sevenChakras": "The Seven Chakras or The Plexuses",
+    "sevenChakrasDescription": "The human subtle system is governed with the help of Seven Chakras or the Plexuses. Defined as Chakras in the ancient texts, these are now recognised as the nodal points, or Plexuses on the nervous system by the medical science. The plexuses govern the physical functions of the connected organs within the body. On the spiritual side of these plexuses, as Chakras, they also govern and enhance one or more behavioral and emotional qualities in the human being. These seven chakras which are as follows:",
+    "mooladhara": "1. Mooladhara Chakra: Innocence or Purity",
+    "mooladharaContent": "The first chakra is situated below the sacrum bone (This place of Sacrum Bone is Called Mooladhara - in which resides the Kundalini, and it is different from Mooladhara Chakra). The main aspect of Mooladhara Chakra is the innocence. Innocence is the quality by which we experience pure, child-like joy, without the limitations of prejudice or conditionings. Innocence gives us dignity, balance, and a tremendous sense of direction and purpose in life. It is nothing but simplicity, purity and joy. It is the inner wisdom that is ever present in the little children, and gets sometimes clouded by our modern lifestyles. But it is a quality which exists eternally within us and cannot be destroyed, waiting to be manifest as pure joy when the Kundalini rises.",
+    "mooladharaQualities": "Innocence is the quality by which we experience pure, child-like joy, without the limitations of prejudice or conditionings.",
+    "mooladharaBenefits": "Innocence gives us dignity, balance, and a tremendous sense of direction and purpose in life.",
+    "mooladharaAssessment": "It is the inner wisdom that is ever present in the little children, and gets sometimes clouded by our modern lifestyles.",
+    "mooladharaBalance": "It is a quality which exists eternally within us and cannot be destroyed, waiting to be manifest as pure joy when the Kundalini rises.",
+    "swadishthan": "2. Swadishthan Chakra: Creativity & Pure Attention",
+    "swadishthanContent": "The second chakra is the chakra of creativity, pure attention and pure knowledge. It is the one which connects us to the inner source of inspiration, and enables us to experience the beauty around us. The pure knowledge given by this chakra is not mental, but it is direct perception of the Reality, that can be felt in our palms and indicates our subtle blockages. Also this is the centre of pure, steady attention and power of concentration. On the physical level it looks after our liver, kidneys, and the lower abdomen. When we think too much, this center gets drained of energy and diseases like diabetes or blood cancer can occur when this chakra goes completely out of balance.",
+    "swadishthanQualities": "The pure knowledge given by this chakra is not mental, but it is direct perception of the Reality, that can be felt in our palms and indicates our subtle blockages.",
+    "swadishthanBenefits": "Also this is the centre of pure, steady attention and power of concentration.",
+    "swadishthanAssessment": "On the physical level it looks after our liver, kidneys, and the lower abdomen.",
+    "swadishthanBalance": "When we think too much, this center gets drained of energy and diseases like diabetes or blood cancer can occur when this chakra goes completely out of balance.",
+    "nabhi": "3. Nabhi Chakra: Satisfaction and Generosity",
+    "nabhiContent": "The third chakra is the one that gives us the sense of generosity, complete satisfaction and contentment. On the left side, the main quality of this center is peace - clearing this chakra can relieve stress and tensions. On the right side, it looks after our liver which is the organ of our attention and power of concentration. When enlightened by the Kundalini, the Nabhi chakra gives us our spiritual ascent, righteousness and inner sense of morality, and complete balance at all levels in our life.",
+    "nabhiQualities": "On the left side, the main quality of this center is peace - clearing this chakra can relieve stress and tensions.",
+    "nabhiBenefits": "On the right side, it looks after our liver which is the organ of our attention and power of concentration.",
+    "nabhiAssessment": "When enlightened by the Kundalini, the Nabhi chakra gives us our spiritual ascent, righteousness and inner sense of morality, and complete balance at all levels in our life.",
+    "nabhiBalance": "It is the one that gives us the sense of generosity, complete satisfaction and contentment.",
+    "anahat": "4. The Heart Chakra or Anahat Chakra: The Seat of Spirit",
+    "anahatContent": "The fourth chakra, the chakra of the heart, is the place where resides our Spirit, our true Self, which is eternally pure and unaffected by anything, like a shining diamond hidden within us which witnesses all our actions. After Self Realization, our attention becomes for the first time connected to our Spirit and we gradually become aware of it. Our misidentifications with our ego or conditionings drop and we start becoming identified with our Spirit, which is our true nature. On the physical level, this chakra looks after our heart and lungs - if affected, it can cause asthma or various heart conditions. It is from our heart that the compassion and love manifests, and also the heart chakra is the one that gives us the sense of responsibility and pure behavior towards others. The heart chakra manifests in the center (at the level of the sternum bone) as complete security and confidence. All our worries, doubts and fears are destroyed when the heart chakra is fully enlightened by the Kundalini.",
+    "anahatQualities": "It is from our heart that the compassion and love manifests, and also the heart chakra is the one that gives us the sense of responsibility and pure behavior towards others.",
+    "anahatBenefits": "The heart chakra manifests in the center (at the level of the sternum bone) as complete security and confidence.",
+    "anahatAssessment": "On the physical level, this chakra looks after our heart and lungs - if affected, it can cause asthma or various heart conditions.",
+    "anahatBalance": "All our worries, doubts and fears are destroyed when the heart chakra is fully enlightened by the Kundalini.",
+    "vishuddhi": "5. Vishuddhi Chakra: Diplomacy and Playful Detachment",
+    "vishuddhiContent": "The fifth chakra is the chakra of diplomacy, of pure relationships with others, and of playful detachment. It removes all our guilts and remorses when it is opened by the Kundalini, and gives us a kind and compassionate voice. The tendencies to dominate others or to feel dominated by others, the feelings of superiority or inferiority and all jealousies are removed when this chakra is nourished by the Kundalini. Also, the Vishuddhi is the chakra which gives us the connection with the whole, enabling us to feel our oneness and the fact that we are all part and parcel of the whole.",
+    "vishuddhiQualities": "It removes all our guilts and remorses when it is opened by the Kundalini, and gives us a kind and compassionate voice.",
+    "vishuddhiBenefits": "The tendencies to dominate others or to feel dominated by others, the feelings of superiority or inferiority and all jealousies are removed when this chakra is nourished by the Kundalini.",
+    "vishuddhiAssessment": "Also, the Vishuddhi is the chakra which gives us the connection with the whole, enabling us to feel our oneness and the fact that we are all part and parcel of the whole.",
+    "vishuddhiBalance": "The fifth chakra is the chakra of diplomacy, of pure relationships with others, and of playful detachment.",
+    "agnya": "6. The Agnya Chakra: Forgiveness And Compassion",
+    "agnyaContent": "The sixth chakra is the chakra of forgiveness and compassion. Forgiveness is the power to let go of anger, hatred and resentment and to discover, in humility, the nobility and generosity of the Spirit. It is the one that dissolves all our ego, conditionings, habits, false ideas of racialism, and all our misidentifications. It is the narrow gate which opens the way for our consciousness to ascend to its final destination, which is the seventh center. Roving eyes, watching impure things, or self-centeredness damage this chakra. Watching the sky, earth or nature can help cleanse it.",
+    "agnyaQualities": "Forgiveness is the power to let go of anger, hatred and resentment and to discover, in humility, the nobility and generosity of the Spirit.",
+    "agnyaBenefits": "It is the one that dissolves all our ego, conditionings, habits, false ideas of racialism, and all our misidentifications.",
+    "agnyaAssessment": "Roving eyes, watching impure things, or self-centeredness damage this chakra.",
+    "agnyaBalance": "Watching the sky, earth or nature can help cleanse it.",
+    "sahastrara": "7. The Sahastrara Chakra: Integration",
+    "sahastraraContent": "The seventh center integrates all the chakras with their respective qualities. It is the last milestone of the evolution of human awareness. Nowadays, we are at a level which corresponds to this chakra, and our consciousness is able to easily enter into this new realm of perception, which is beyond our limited mind and concepts, and which becomes absolute at the level of the Sahastrara. This chakra gives us the direct, absolute perception of Reality on our central nervous system. This is precisely what is achieved by Self Realization, through the spontaneous awakening of the Kundalini given by Sahaja Yoga. The working of Self Realization and subtle aspects of the chakras and channels are too extensive to be explained here. They are part of a knowledge which is not only to be studied at the mental level, but to be experienced directly. This new level of consciousness can be achieved after Self Realization, through the regular practice of Sahaja Yoga meditation techniques that are taught, always free of charge, in over 75 countries around the world. Kindly refer to the Sahaja Yoga Centers list available on this website to find the closest center to you.",
+    "sahastraraQualities": "The seventh center integrates all the chakras with their respective qualities.",
+    "sahastraraBenefits": "It is the last milestone of the evolution of human awareness.",
+    "sahastraraAssessment": "Nowadays, we are at a level which corresponds to this chakra, and our consciousness is able to easily enter into this new realm of perception, which is beyond our limited mind and concepts, and which becomes absolute at the level of the Sahastrara.",
+    "sahastraraBalance": "This chakra gives us the direct, absolute perception of Reality on our central nervous system.",
     "kundalini": "Kundalini"
   },
+  
+  
   "welcome": {
-    "title": "WELCOME TO SAHAJA YOGA",
-    "subtitle": "The time has come for all of you to get your self-realisation",
-    "description": "by which your attention becomes enlightened, your health gets completely all right, your mental processes are sensible, but above all you stand in your present.",
-    "sessions": {
-      "title": "Daily Free Meditation Sessions",
-      "morning": {
-        "title": "Morning Session",
-        "time": "6:00 AM - 7:00 AM"
-      },
-      "beginner": {
-        "title": "For Beginners",
+  "title": "WELCOME TO SAHAJA YOGA",
+  "subtitle": "The time has come for all of you to get your self-realisation,",
+  "description": "by which your attention becomes enlightened, your health gets completely all right, your mental processes are sensible, but above all you stand in your present.",
+  "donate": "Donate",
+  "sessions": {
+    "title": "Daily Free Meditation Sessions",
+    "morning": {
+      "title": "Morning Session",
+      "time": "6:00 AM - 7:00 AM"
+    },
+    "evening": {
+      "title": "Evening Session",
+      "time": "7:00 PM - 8:00 PM"
+    },
+    "beginner": {
+      "title": "For Beginners",
+      "evening": {
+        "title": "Evening Session",
         "time": "7:00 PM - 8:00 PM"
-      },
-      "join": "Join",
+      }
+    },
+    "join": "Join",
+    
+
       "features": {
         "items": [
           {
@@ -57,6 +122,11 @@
       }
     }
   },
+  "marquee": {
+    "seminar": "⭐️ Tamil Nadu Seminar at Theni starting from 10th to 12th Jan 2025",
+    "registration": "⭐️ For Registration and Travel Please Contact : 9884849976"
+  },
+
   "about": {
     "title": "About Sahaja Yoga",
     "description": "Sahaja Yoga is a simple meditation practice that nurtures an evolved spiritual personality through the awakening of the Kundalini, a process known as Self-Realization. Discovered by H.H. Shri Mataji Nirmala Devi in 1970, this awakening fulfills the universal goal shared by all religions. While the knowledge of Kundalini is ancient, it was historically kept secret and passed only from guru to disciple, as achieving Self-Realization was once extremely challenging. Shri Mataji made a breakthrough by connecting our Kundalini with the Spirit (Atma), through Self-Realization accessible to all humans for the first time in the history. This process brings physical, mental, and emotional balance as a natural outcome of Sahaja Yoga meditation. Self-Realization is the birthright of every human being, now made available to all at free of cost worldwide.",
@@ -357,6 +427,107 @@
   "Mrs_Manimegalai": "Mrs. Manimegalai",
   "Mr_Murali": "Mr. Murali",
   "Mrs_Jayashankari": "Mrs. Jayashankari"
+},
+
+"nadis": {
+    "title": "Energy Channels",
+    "subtitle": "Understanding the Three Nadis",
+    "pingala": {
+      "title": "Pingala Nadi",
+      "content": [
+        "Your right energy channel (Pingala nadi), also called the sun channel, begins at your Swadisthan chakra and travels up the right side of your body, terminating in the ego area of the brain. The ego is the area of your brain that gives you a sense of individualism and self, as distinct from others. It is the ego that allows you to relate to yourself as \"me\" or \"I.\"",
+        "Action and planning are essential qualities associated with the right energy channel. They drive your mental and physical activities. However, the demand for energy on the right side can sometimes be so great that the left side is weakened. When this occurs, your desire for joy may evaporate, and you find yourself grouchy and irritable. You may even feel like yelling at everyone or \"flying off the handle\" when the slightest thing goes wrong. As a result, the negativity, stress and aggression continue to build. Fortunately, awareness is the first step to correcting imbalance. Meditation, and accessing your Kundalini energy to restore harmony, will allow you to do so.",
+        "In summary, your right energy channel influences your ability to plan and take action for the future. It also plays a role in negative emotions such as anger, irritability and stress. Your right channel thinks in terms of \"I,\" \"mine,\" and \"myself.\" Overdo any of these and you may become unpleasant to be around. However, your meditation will tell you when your right channel energy is too high and when it's time to cool down and rebalance."
+      ],
+      "intro": "What is an energy channel (nadi)?",
+      "introDescription": "The Kundalini travels throughout your body by way of three energy channels, or nadis. The three nadis are the left channel, the right channel, and the center channel. All three work perfectly together to integrate and balance the flow of your Kundalini."
+    },
+    "ida": {
+      "title": "Ida Nadi",
+      "content": [
+        "Your left energy channel (called Ida nadi in Sanskrit), also known as the moon channel, begins at the Mooladhara chakra and travels up the left side of your body, terminating in the superego area on the right side of your mind-brain. The superego is the storehouse of all your memories, habits and conditionings. Your superego is also the area of your brain that encourages moral behavior. In most of us, it has to wage war on our more selfish, pleasure seeking urges in the process.",
+        "Joy is an essential quality associated with the left energy channel. Ideally, it is felt as the innocent joy of a child. Remember when you were a young child and you'd wake up happy every morning? The joy carried by the left energy channel feels just like that. As adults, we long for this joy, though we don't often find it. It may become blocked or \"bruised\" by some of our life experiences. However, it still lives within us and can be awakened through meditation.",
+        "If you have a problem with your left energy channel, you may experience emotional extremes. This includes moods that shift rapidly from elation to depression and back again. You may also experience lethargy and extreme passivity. Most of us have suffered the occasional \"couch potato\" day."
+      ]
+    },
+    "sushumna": {
+      "title": "Sushumna Nadi",
+      "content": [
+        "Your central energy channel (Sushumna nadi), also called the middle path, travels from the sacrum bone at the base of your spine (where your Kundalini energy resides) straight up your spine towards the Sahastrara chakra. Your central energy channel is the channel that aids your spiritual growth. In fact, we'd say that you've been drawn to Sahaja Yoga because of the strength of your central channel. The central energy channel can be used to help you evolve continuously into an improved personality with an increased focus on the subtler aspects of life.",
+        "Your entire subtle energy system is integrated in the Sahastrara chakra. As such, it is the most important chakra for spiritual growth and meditation. It is also the chakra in which your Kundalini has the greatest ability to maximize its potential to help you. Clearing obstructions in the central energy channel is a critical component of Sahaja Yoga. When you are constantly in balance, your central channel remains clear. This paves the way for your Kundalini, to rise smoothly to the Sahastrara chakra. When this happens, your own Kundalini unites with the Divine Energy of the universe.",
+        "It may sound complex, but understanding your energy channels is quite simple if you think of them in the following way. You'll want to use your left and right energy channels to balance your emotions, desires and actions as you live and enjoy your life. At the same time, you'll want to spend time on the central energy channel so you can continuously improve yourself as a spiritual personality. Keeping all three channels balanced and clear will give you the power to manage your life, and all its challenges, with ease."
+      ]
+    }
+  },
+  "books": {
+    "title": "Books",
+    "noResults": "No results found",
+    "categories": {
+      "Tamil Pamphlets": "Tamil Pamphlets",
+      "Tamil Books": "Tamil Books",
+      "English Books": "English Books"
+    }
+  },
+  "kundalini": {
+    "title": "Kundalini Awakening Meditation",
+    "subtitle": "Pure Desire Of The God Almighty With Us",
+    "imageAlt": "Kundalini Diagram",
+    "description": "Kundalini is the power of pure desire within us, a motherly and soothing spiritual energy which lies dormant at the base of the spine in the sacrum bone (the ancient civilizations knew that in this bone resides a sacred energy).\n\nSelf realisation is the awakening of the Kundalini through the central channel, piercing through the six chakras above the sacrum bone and emerging at the top of the head (fontanel bone area) as a gentle \"fountain\" of coolness.\n\nThe word fontanel itself means \"little fountain\" which shows again the ancient knowledge about this phenomenon of Self realisation.\n\nSelf realisation has always been the ultimate goal of all religions and spiritual traditions of the world, but was extremely difficult to attain in the past. It has now become a mass phenomenon achieved effortlessly through Sahaja Yoga, which is Shri Mataji's invaluable gift to humanity.",
+    "whatIsKundalini": {
+      "title": "What is Kundalini",
+      "description": "The Kundalini is like a rope with a thousand strands; when we first get our Self-realisation, only one or two strands find their way through the chakras and reach the sahastrara (the top chakra). However, with regular meditation, gradually more strands of the Kundalini rise and connects us to the divine power. The experience of meditation becomes more profound and blissful over time. The Kundalini was described by Indian saints such as Adi Shankaracharya (c 600 a.d.), Kabir (c 1500 a.d.) and Jnanadeva (c 1200 a.d.) among others."
+    },
+    "references": {
+      "title": "References to Kundalini",
+      "description": "This movement of Kundalini is felt by the presence of a cool or, in the case of imbalance, a warm breeze across the palms of hands or the soles of feet. Such a phenomenon can be seen to be described in a diverse array of scripture like:",
+      "items": [
+        "Aquarian Gospel of Christ, ch. 44, v19, ch. 161, v35, ch. 162, v4;",
+        "Gyaneshwari, ch.6;",
+        "Ezekiel, ch. 37, vs. 5-6;",
+        "Old Testament; John, ch. 14 vs. 15- 17 & 25: New Testament;",
+        "Quran, sura 24, vs. 24; sura 35, vs. 9; sura 36, vs. 64;",
+        "Descieux, 1998iii"
+      ]
+    }
+  },
+  "audioLibrary": {
+    "title": "Audio Library",
+    "noResults": "No audios found matching your search."
+  },
+  "clearance": {
+    "title": "Clearance Techniques",
+    "subtitle": "Methods for Spiritual Cleansing",
+    "process": "📝 Process & Steps",
+    "techniques": {
+      "footsoaking": {
+        "title": "Footsoaking",
+        "process": "Light a candle (fire and light elements) in front of a photo of Shri Mataji.\nPlace your feet in a basin of cool or luke-warm* water containing a handful of salt (water and earth elements).\nSit comfortably in a chair with hands, palms up, on your lap.\nRaise the Kundalini and put on a bandhan.\nMeditate or/give vibrations to your chakras for 10-15 minutes.\nFinish by again raising the Kundalini and putting on a bandhan.\nRinse and dry your feet (use the clean water for rinsing).\nSit in meditation for 5 minutes or so.\nFlush the footsoak water down the toilet.\nUse the foot soak bowl only for footsoaking.\n*If the right hand is heaviest, use cold water, if the left hand heavy, use warm water."
+      },
+      "shoebeating": {
+        "title": "Shoebeating",
+        "process": "1. Put yourself in Bandhan in front of Shree Mataji`s photograph \n2. Look out for a place in the back-yard of your house OR patio (balcony) to execute shoe-beat procedure ( Don`t do shoe-beat in front of MOTHER`s photograph)\n3.Write the xyz problem on the floor/ground with your right hand fingers. It may be a negativity causing personal problem / a collective problem OR your own ego/super-ego.\n4. Encircle the area on the floor with 7 clock-wise parabolic (Not circular, as vibrations always propagate in Parabolic fashion) bandhans saying the mantra for Shree Maha-Laxmi, Shree Maha-Saraswati, Shree Maha-Kali, Shree Ganehsa-Gouri ( you may nclude all these names in a single mantra )\n5.Take your left shoe in your right hand & then shoe beat the problem with the heel of the left shoe 21 times.\n6. Repeat steps 4) & 5) above 2 more times saying the mantra for (2nd round)– Shree Hanumana, Shree Kartikeya, Shree Bhairava (3rd round)–Shree Jagadamba, Shree Durga, Shree Eka-Dasha Rudra ( You may swap 2nd & 3rd round mantras above) All the above mantras are the negativity destroying mantras & hence they are chanted during shoe-beat.\n7. Always keep your attention on Sahasrara during the whole process of shoe-beating\n8. After completing the process, waive your hand in the air above the area of shoe-beat & draw a Swastika & a Cross saying the mantra for Shree Ganesha-Gouri & Shree Jesus-Mary respectively."
+      },
+      "matka": {
+        "title": "Matka Treatment",
+        "process": "a)Take a Clay Matka (pot) with a lid\nb)Put 7 lemons (rounded ones) & 7 chillies in it. Add some water & sprinkle someKumkum(vermillion) powder in it\nc)Keep this matka with all the contents in it before MOTHER`s photograph & pray HER tovibrate it \nd)After a day or two, keep the Matka (pot) below the bed side of the person who needs to be treated\ne)Keep the lid open during Night time & close it during the day time\nf)Don`t touch the matka & keep it for 7/21 days as required\ng)After 7/21 days are completed,waive your hand on top of the Matka to draw Swastika &a Cross saying the mantra of Shree Ganesha-Gauri & Shree Jesus-Mary. Now touch them& pick them up.\nh)Dispense all the contents along with Matka in running water body\ni)There are no restrictions of any kind about New Moon day (Amavasya) OR Full Moonday (Poornima) while executing the Matka treatment "
+      },
+      "collective": {
+        "title": "Collective Clearance",
+        "process": "1. Attend regular collective meditation centers\n2. Participate in group clearing sessions\n3. Maintain collective attention\n4. Follow the protocols"
+      },
+      "candle": {
+        "title": "Candle Treatment",
+        "process": "Mother has particularly recommended using larger candies that give a bigger flame, otherwise the technique is not so effective.\nA candle treatment can consist of numerous combinations:\n•  Light a candle in front of the photograph.\n•  Use a second candle by moving it up and down on your left side, using the mantras of the left side.\n•  Use a candle to give clockwise (full-circle) bandhans to the affected chakras on the left side.\n•  While the left hand points towards the photo, keep a burning candle in front of your left hand. The right hand is to be put on or pointing towards Mother Earth, which sucks in all the negativity.\n•  Use a candle behind or near your left Swadhisthan chakra while meditating.\n•  To improve the Agnya chakra look through the flame and at the bindi on Mother's forehead. Do not focus on the flame. The light element clears out all the negativity"
+      }
+    }
+  },
+  "gallery": {
+    "backToGalleries": "Back to galleries",
+    "notFound": "Gallery not found"
+  },
+
+  "headerTitle": "Inspiring Speeches",
+  "headerSubtitle": "Discover powerful speeches that changed the world"
 }
 
-}
+

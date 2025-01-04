@@ -18,7 +18,7 @@ const DonationSection = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-white">
+    <section  id="donation-section" ref={ref} className="py-20 bg-white">
       <div className="max-w-full min-h-screen mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 py-48">
           <motion.div

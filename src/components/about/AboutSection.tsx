@@ -30,7 +30,7 @@ const AboutSection = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="lg:w-1/2 flex items-center justify-center px-8"
+        className="lg:w-1/2 flex items-center justify-center px-8 bg-[#fdf6e9]"
       >
         <div className="max-w-lg">
           <h2 className="text-4xl font-bold text-gray-900 mb-6 lg:mt-0 mt-12">

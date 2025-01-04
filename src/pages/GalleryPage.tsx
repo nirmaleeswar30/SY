@@ -1,16 +1,18 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; // Import the translation hook
 import { galleries } from '../data/galleries';
 import { GalleryHeader } from '../components/GalleryHeader';
 import { GalleryGrid } from '../components/GalleryGrid';
 import { NotFound } from '../components/NotFound';
 
 function GalleryPage() {
+  const { t } = useTranslation(); // Use the translation hook
   const { id } = useParams();
   const gallery = galleries.find(g => g.id === id);
 
   if (!gallery) {
-    return <NotFound />;
+    return <NotFound message={t('gallery.notFound')} />; // Translated not found message
   }
 
   const allImages = [gallery.mainImage, ...gallery.relatedImages];

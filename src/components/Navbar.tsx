@@ -144,7 +144,9 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </button>
                                 {isChakraDropdownOpen && (
-                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
+                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48" 
+                                    onMouseLeave={()=> setIsChakraDropdownOpen(false)} 
+                                    >
                                         <ul className="py-2 text-sm text-gray-700">
                                             {chakraLinks.map((link, index) => (
                                                 <li key={index}>
@@ -185,7 +187,9 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </button>
                                 {isResourcesDropdownOpen && (
-                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
+                                    <div className="z-50 absolute left-0 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48"
+                                    onMouseLeave={()=> setIsResourcesDropdownOpen(false)}
+                                    >
                                         <ul className="py-2 text-sm text-gray-700">
                                             {resourceLinks.map((link, index) => (
                                                 <li key={index}>
@@ -201,6 +205,15 @@ const Navbar: React.FC = () => {
                                         </ul>
                                     </div>
                                 )}
+                            </li>
+                            <li>
+                                <Link
+                                    to="/clearence"
+                                    className={`block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0 ${location.pathname === '/clearence' ? 'text-yellow-300' : ''
+                                        }`}
+                                >
+                                    {t('nav.clearence')}
+                                </Link>
                             </li>
                             <li>
                                 <Link

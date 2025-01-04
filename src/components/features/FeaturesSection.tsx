@@ -46,7 +46,7 @@ const FeaturesSection: React.FC = () => {
   const features = getFeatures();
 
   return (
-    <section className="py-56 bg-red-900">
+    <section className="py-56 bg-[#fdf6e9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

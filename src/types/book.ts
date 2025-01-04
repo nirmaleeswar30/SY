@@ -6,4 +6,5 @@ export interface Book {
     downloadUrl: string;
     description: string;
     genre: string;
+    category: string;
   }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 interface NadiContent {
   title: string;
@@ -11,55 +12,40 @@ interface NadiData {
 }
 
 const Nadis = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<string>('pingala');
 
   const nadiContent: NadiData = {
     pingala: {
-      title: "Pingala Nadi",
+      title: t('nadis.pingala.title'),
       content: [
-        "Your right energy channel ( Pingala nadi), also called the sun channel, begins at your Swadisthan chakra and travels up the right side of your body, terminating in the ego area of the brain. The ego is the area of your brain that gives you a sense of individualism and self, as distinct from others. It is the ego that allows you to relate to yourself as \"me\" or \"I.\"",
-        "Action and planning are essential qualities associated with the right energy channel. They drive your mental and physical activities. However, the demand for energy on the right side can sometimes be so great that the left side is weakened. When this occurs, your desire for joy may evaporate, and you find yourself grouchy and irritable. You may even feel like yelling at everyone or \"flying off the handle\" when the slightest thing goes wrong. As a result, the negativity, stress and aggression continue to build. Fortunately, awareness is the first step to correcting imbalance. Meditation, and accessing your Kundalini energy to restore harmony, will allow you to do so.",
-        "In summary, your right energy channel influences your ability to plan and take action for the future. It also plays a role in negative emotions such as anger, irritability and stress. Your right channel thinks in terms of \"I,\" \"mine,\" and \"myself.\" Overdo any of these and you may become unpleasant to be around. However, your meditation will tell you when your right channel energy is too high and when it's time to cool down and rebalance."
+        t('nadis.pingala.content.1'),
+        t('nadis.pingala.content.2'),
+        t('nadis.pingala.content.3')
       ]
     },
     ida: {
-      title: "Ida Nadi",
+      title: t('nadis.ida.title'),
       content: [
-        "Your left energy channel (called Ida nadi in Sanskrit), also known as the moon channel, begins at the Mooladhara chakra and travels up the left side of your body, terminating in the superego area on the right side of your mind-brain. The superego is the storehouse of all your memories, habits and conditionings. Your superego is also the area of your brain that encourages moral behavior. In most of us, it has to wage war on our more selfish, pleasure seeking urges in the process.",
-        "Joy is an essential quality associated with the left energy channel. Ideally, it is felt as the innocent joy of a child. Remember when you were a young child and you'd wake up happy every morning? The joy carried by the left energy channel feels just like that. As adults, we long for this joy, though we don't often find it. It may become blocked or \"bruised\" by some of our life experiences. However, it still lives within us and can be awakened through meditation.",
-        "If you have a problem with your left energy channel, you may experience emotional extremes. This includes moods that shift rapidly from elation to depression and back again. You may also experience lethargy and extreme passivity. Most of us have suffered the occasional \"couch potato\" day.",
-        "Remember the lack of energy and desire you felt as you sat around, doing nothing at all? That feeling may have been caused by a problem with your left energy channel. In summary, your left energy channel influences your emotions, feelings and desires. It is also connected to your memories and past experiences. As long as your emotions stay at normal levels, you'll do just fine. However, if you're feeling extremes of emotion such as depression, gloominess and brooding, then it's time to do something about it. All you need to start clearing your left channel is meditation. Sahaja Yoga techniques are easy, safe and the renewed feelings of joy and energy you'll experience can be positively addictive."
+        t('nadis.ida.content.1'),
+        t('nadis.ida.content.2'),
+        t('nadis.ida.content.3')
       ]
     },
     sushumna: {
-      title: "Sushumna Nadi",
+      title: t('nadis.sushumna.title'),
       content: [
-        "Your central energy channel ( Sushumna nadi), also called the middle path, travels from the sacrum bone at the base of your spine (where your Kundalini energy resides) straight up your spine towards the Sahastrara chakra. Your central energy channel is the channel that aids your spiritual growth. In fact, we'd say that you've been drawn to Sahaja Yoga because of the strength of your central channel. The central energy channel can be used to help you evolve continuously into an improved personality with an increased focus on the subtler aspects of life.",
-        "Your entire subtle energy system is integrated in the Sahastrara chakra. As such, it is the most important chakra for spiritual growth and meditation. It is also the chakra in which your Kundalini has the greatest ability to maximize its potential to help you. Clearing obstructions in the central energy channel is a critical component of Sahaja Yoga. When you are constantly in balance, your central channel remains clear. This paves the way for your Kundalini, to rise smoothly to the Sahastrara chakra. When this happens, your own Kundalini unites with the Divine Energy of the universe. Proper functioning of the central energy channel is crucial to maintaining energy balance. In a way, it represents the very essence of balancing the chakras and the primary goal of meditation.",
-        "It may sound complex, but understanding your energy channels is quite simple if you think of them in the following way. You'll want to use your left and right energy channels to balance your emotions, desires and actions as you live and enjoy your life. At the same time, you'll want to spend time on the central energy channel so you can continuously improve yourself as a spiritual personality. Keeping all three channels balanced and clear will give you the power to manage your life, and all its challenges, with ease. You'll also experience and enjoy all of life's pleasures in a balanced and more meaningful way."
+        t('nadis.sushumna.content.1'),
+        t('nadis.sushumna.content.2'),
+        t('nadis.sushumna.content.3')
       ]
     }
   };
 
-  const pageVariants = {
-    initial: { opacity: 0, y: 20 },
-    animate: { 
-      opacity: 1, 
-      y: 0,
-      transition: { duration: 0.6 }
-    },
-    exit: { 
-      opacity: 0,
-      y: -20,
-      transition: { duration: 0.4 }
-    }
-  };
-
-  const contentVariants = {
-    hidden: { opacity: 0, x: -20 },
+  const containerVariants = {
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      x: 0,
       transition: {
         duration: 0.6,
         staggerChildren: 0.1
@@ -67,63 +53,50 @@ const Nadis = () => {
     }
   };
 
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
+  const contentVariants = {
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
+      y: 0,
+      transition: { duration: 0.5 }
     }
   };
 
-  const buttonVariants = {
-    hover: {
-      scale: 1.05,
-      color: "#be123c", // text-rose-700
-      transition: { duration: 0.2 }
-    },
-    tap: { scale: 0.95 }
-  };
+  console.log('Active Tab:', activeTab);
+  console.log('Nadi Content:', nadiContent);
 
   return (
-    <motion.div 
-      className="bg-orange-100 pt-14 pb-12"
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      variants={pageVariants}
+    <motion.div
+      className="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
     >
-      <motion.div 
-        className="text-center pb-4"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-      >
-        <h1 className="text-4xl font-semibold text-rose-700">Nadis</h1>
-      </motion.div>
+      <main className="max-w-7xl mx-auto px-4 py-12">
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <h1 className="text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600">
+            {t('nadis.title')}
+          </h1>
+          <h2 className="text-2xl text-red-500 font-medium">{t('nadis.subtitle')}</h2>
+        </motion.div>
 
-      <motion.section 
-        className="max-w-7xl mx-auto mt-2 p-6 bg-pink-100 rounded-lg shadow-md"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
-      >
-        <div className="flex justify-center mt-4 space-x-6 border-b-2 border-rose-200 pb-2 font-semibold">
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
           {Object.keys(nadiContent).map((nadi) => (
             <motion.button
               key={nadi}
               onClick={() => setActiveTab(nadi)}
-              className={`${
+              className={`px-6 py-3 rounded-full transition-all shadow-md ${
                 activeTab === nadi
-                  ? "text-rose-700 border-b-2 border-rose-700"
-                  : "text-gray-600 hover:text-rose-700"
-              } font-medium`}
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
+                  ? 'bg-gradient-to-r from-red-500 to-pink-500 text-white'
+                  : 'bg-white text-gray-700 hover:bg-pink-50'
+              }`}
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}
+              whileTap={{ scale: 0.98 }}
             >
               {nadiContent[nadi].title}
             </motion.button>
@@ -131,101 +104,75 @@ const Nadis = () => {
         </div>
 
         <AnimatePresence mode="wait">
-          <motion.div 
+          <motion.div
             key={activeTab}
-            className="mt-6 flex flex-col lg:flex-row items-start"
-            variants={contentVariants}
+            className="bg-white rounded-2xl shadow-xl overflow-hidden"
+            variants={containerVariants}
             initial="hidden"
             animate="visible"
-            exit="hidden"
+            exit={{ opacity: 0, scale: 0.95 }}
+            layout
           >
-            <motion.div className="flex-1 text-justify" variants={contentVariants}>
-              {activeTab === Object.keys(nadiContent)[0] && (
-                <motion.div variants={contentVariants}>
-                  <h2 className="text-2xl font-bold text-rose-700">What is an energy channel (nadi)?</h2>
-                  <motion.p 
-                    className="mt-4 text-gray-800"
-                    variants={{
-                      hidden: { opacity: 0, y: 10 },
-                      visible: { opacity: 1, y: 0 }
-                    }}
-                  >
-                    The Kundalini travels throughout your body by way of three energy channels, or <em>nadis</em>.
-                    The three nadis are the left channel, the right channel, and the center channel. All three
-                    work perfectly together to integrate and balance the flow of your Kundalini. Each also plays
-                    a specific role in maintaining your emotions, moods, and physical health.
-                  </motion.p>
-                  
-                  <motion.p 
-                    className="mt-4 text-gray-800"
-                    variants={{
-                      hidden: { opacity: 0, y: 10 },
-                      visible: { opacity: 1, y: 0 }
-                    }}
-                  >
-                    Each of the chakras is located on all the three channels. As the Kundalini energy rises through
-                  the central channel, it nourishes each chakra, the center, left, and right side of each chakra.
-                  At the 7th or Sahastrara chakra, it achieves a connection with the all-pervading divine energy.
-                  The opening of the Sahastrara chakra thus facilitates the flow of the divine energy through this
-                  opening back into the three nadis nourishing the chakras again.
-                  </motion.p>
-                  
-                  <motion.p 
-                    className="mt-4 text-gray-800"
-                    variants={{
-                      hidden: { opacity: 0, y: 10 },
-                      visible: { opacity: 1, y: 0 }
-                    }}
-                  >
-                   All this happens in a split second and nearly instantaneously. Also, the rising of the Kundalini
-                   energy really means that a few strands of the thread-like Kundalini energy rise.
-                  </motion.p>
-
-                </motion.div>
-              )}
-              
-              <motion.h2 
-                className="text-2xl font-bold text-rose-700"
-                variants={contentVariants}
-              >
-                {nadiContent[activeTab].title}
-              </motion.h2>
-              
-              {nadiContent[activeTab].content.map((paragraph, index) => (
-                <motion.p
-                  key={index}
-                  className="mt-4 text-gray-800"
-                  variants={{
-                    hidden: { opacity: 0, y: 10 },
-                    visible: { 
-                      opacity: 1, 
-                      y: 0,
-                      transition: { delay: index * 0.1 }
-                    }
-                  }}
+            <div className="p-8">
+              <div className="flex flex-col lg:flex-row gap-12">
+                <motion.div
+                  className="lg:w-1/3"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
                 >
-                  {paragraph}
-                </motion.p>
-              ))}
-            </motion.div>
+                  <div className="space-y-6">
+                    <motion.img
+                      src="https://www.sahajayoga.org.in/new_images/subtle_image.jpg"
+                      alt="Subtle System"
+                      className="w-full h-auto rounded-xl shadow-lg"
+                      whileHover={{ scale: 1.02 }}
+                      layoutId={`nadi-image-${activeTab}`}
+                    />
+                    <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600">
+                      {nadiContent[activeTab].title}
+                    </h2>
+                  </div>
+                </motion.div>
 
-            <motion.div 
-              className="flex-1 mt-6 lg:mt-0 lg:ml-10"
-              variants={imageVariants}
-            >
-              <div className="relative">
-                <motion.img
-                  src="https://www.sahajayoga.org.in/new_images/subtle_image.jpg"
-                  alt="Subtle System"
-                  className="w-full max-w-md lg:max-w-lg mx-auto rounded-lg shadow-md"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                />
+                <motion.div
+                  className="lg:w-2/3"
+                  variants={contentVariants}
+                >
+                  <div className="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-xl">
+                    {activeTab === 'pingala' && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="mb-8"
+                      >
+                        <h3 className="text-xl font-bold text-red-700 mb-4">{t('nadis.pingala.intro')}</h3>
+                        <p className="text-gray-700 leading-relaxed">
+                          {t('nadis.pingala.introDescription')}
+                        </p>
+                      </motion.div>
+                    )}
+
+                    <div className="space-y-6">
+                      {nadiContent[activeTab].content.map((paragraph, index) => (
+                        <motion.p
+                          key={index}
+                          className="text-gray-700 leading-relaxed"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: index * 0.1 }}
+                        >
+                          {paragraph}
+                        </motion.p>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
         </AnimatePresence>
-      </motion.section>
+      </main>
     </motion.div>
   );
 };
