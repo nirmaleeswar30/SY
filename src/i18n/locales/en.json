@@ -181,7 +181,7 @@
     
     "title": "Event Schedule 2025",
     "subtitle": "Join us for these transformative events",
-    "dateTime": "{{date}} at {{time}}",
+    "dateTime": "{{date}}",
     "mentor": "Mentor: {{mentor}}",
     "location": "Location: {{location}}",
     "venue": "Venue: {{venue}}",
