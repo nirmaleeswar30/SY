@@ -1,5 +1,5 @@
 export const videosByCategory = {
-    entertainment: [
+    instrumental: [
       {
         id: '1',
         title: 'Top 10 Movie Scenes of 2024',
@@ -13,7 +13,7 @@ export const videosByCategory = {
         description: 'Exclusive behind-the-scenes footage'
       }
     ],
-    music: [
+    tamil: [
       {
         id: '3',
         title: 'Live Concert Highlights',
@@ -27,7 +27,7 @@ export const videosByCategory = {
         description: 'Latest music releases this week'
       }
     ],
-    gaming: [
+    hindi: [
       {
         id: '5',
         title: 'Pro Gaming Moments',
@@ -41,7 +41,7 @@ export const videosByCategory = {
         description: 'Reviews of the latest game releases'
       }
     ],
-    photography: [
+    english: [
       {
         id: '7',
         title: 'Photography Basics Guide',

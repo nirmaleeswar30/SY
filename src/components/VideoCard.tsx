@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { Video } from '../types/video';
 import { VideoPlayer } from './VideoPlayerBha';
+import { useTranslation } from 'react-i18next';
 
 interface VideoCardProps {
   video: Video;
@@ -8,6 +9,7 @@ interface VideoCardProps {
 
 export const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const { t } = useTranslation();
   const videoId = video.embedUrl.split('/').pop() || '';
 
   return (
@@ -29,8 +31,8 @@ export const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
           </div>
         </div>
         <div className="p-4">
-          <h3 className="text-xl font-semibold mb-2">{video.title}</h3>
-          <p className="text-gray-600">{video.description}</p>
+          <h3 className="text-xl font-semibold mb-2">{t(`videos.${video.id}.title`)}</h3>
+          <p className="text-gray-600">{t(`videos.${video.id}.description`)}</p>
         </div>
       </div>
 

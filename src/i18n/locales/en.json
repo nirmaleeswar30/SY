@@ -525,6 +525,66 @@
     "backToGalleries": "Back to galleries",
     "notFound": "Gallery not found"
   },
+  "homePageBhajans": {
+    "title": "Explore Video Categories"
+  },
+  "categories": {
+    "instrumental": {
+      "title": "Instrumental",
+      "description": "Top entertainment videos from around the world"
+    },
+    "tamil": {
+      "title": "Tamil",
+      "description": "Latest music videos and performances"
+    },
+    "hindi": {
+      "title": "Hindi",
+      "description": "Gaming highlights and walkthroughs"
+    },
+    "english": {
+      "title": "English",
+      "description": "Photography tutorials and tips"
+    }
+  },
+  "category": {
+    "notFound": "Category not found",
+    "backToCategories": "Back to Categories",
+    "noVideosAvailable": "No videos available in this category."
+  },
+  "videos": {
+    "1": {
+      "title": "Top 10 Movie Scenes of 2024",
+      "description": "The most iconic movie scenes from this year"
+    },
+    "2": {
+      "title": "Behind the Scenes: Latest Blockbuster",
+      "description": "Exclusive behind-the-scenes footage"
+    },
+    "3": {
+      "title": "Live Concert Highlights",
+      "description": "Best moments from recent concerts"
+    },
+    "4": {
+      "title": "New Music Friday Playlist",
+      "description": "Latest music releases this week"
+    },
+    "5": {
+      "title": "Pro Gaming Moments",
+      "description": "Amazing plays from professional gamers"
+    },
+    "6": {
+      "title": "Game Review Roundup",
+      "description": "Reviews of the latest game releases"
+    },
+    "7": {
+      "title": "Photography Basics Guide",
+      "description": "Learn the fundamentals of photography"
+    },
+    "8": {
+      "title": "Advanced Camera Techniques",
+      "description": "Master your camera settings"
+    }
+  },
 
   "headerTitle": "Inspiring Speeches",
   "headerSubtitle": "Discover powerful speeches that changed the world"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { LucideIcon } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface CategoryCardProps {
   id: string;
@@ -18,23 +19,31 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
   icon: Icon,
   bgImage,
   color
-}) => (
-  <Link
-    to={`/resources/category/${id}`}
-    className="relative group overflow-hidden rounded-xl transition-transform duration-300 hover:scale-105"
-  >
-    <div className={`absolute inset-0 bg-gradient-to-br opacity-90 z-10 ${color}`} />
-    <img
-      src={bgImage}
-      alt={title}
-      className="absolute inset-0 w-full h-full object-cover"
-    />
-    <div className="relative z-20 p-6 h-full flex flex-col justify-between min-h-[300px]">
-      <Icon className="w-12 h-12 text-white" />
-      <div>
-        <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
-        <p className="text-white/90">{description}</p>
+}) => {
+  const { t } = useTranslation(); // Use the translation hook
+
+  return (
+    <Link
+      to={`/resources/category/${id}`}
+      className="relative group overflow-hidden rounded-xl transition-transform duration-300 hover:scale-105"
+    >
+      <div className={`absolute inset-0 bg-gradient-to-br opacity-90 z-10 ${color}`} />
+      <img
+        src={bgImage}
+        alt={title}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="relative z-20 p-6 h-full flex flex-col justify-between min-h-[300px]">
+        <Icon className="w-12 h-12 text-white" />
+        <div>
+          <h3 className="text-2xl font-bold text-white mb-2">
+            {t(`categories.${id}.title`)} {/* Translated title */}
+          </h3>
+          <p className="text-white/90">
+            {t(`categories.${id}.description`)} {/* Translated description */}
+          </p>
+        </div>
       </div>
-    </div>
-  </Link>
-)
+    </Link>
+  );
+};
