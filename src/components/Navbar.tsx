@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
     const resourceLinks: ResourceLink[] = [
         { title: t('resources.books'), path: '/resources/books' },
         { title: t('resources.speeches'), path: '/resources/speeches' },
-        { title: t('resources.bhajans'), path: '/resources/bhajans' },
+        { title: t('resources.bhajans'), path: '/resources/category' },
         { title: t('resources.photos'), path: '/resources/gallery' },
         { title: t('resources.miracles'), path: '/resources/sahaj_miracles' },
     ];

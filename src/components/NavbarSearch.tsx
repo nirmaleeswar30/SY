@@ -33,7 +33,7 @@ const NavbarSearch: React.FC<SearchProps> = ({ onClose }) => {
     // Resource items
     { title: 'Books', path: '/resources/books', category: 'Resources' },
     { title: 'Speeches', path: '/resources/speeches', category: 'Resources' },
-    { title: 'Bhajans', path: '/resources/bhajans', category: 'Resources' },
+    { title: 'Bhajans', path: '/resources/category', category: 'Resources' },
     { title: 'Photos', path: '/resources/gallery', category: 'Resources' },
     { title: 'Sahaj Miracles', path: '/resources/sahaj_miracles', category: 'Resources' },
   ];
