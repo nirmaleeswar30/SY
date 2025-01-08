@@ -207,15 +207,15 @@ const EventSchedule: React.FC = () => {
                     <p className="text-gray-600">
                       {t('events.dateTime', '{{date}} at {{time}}', { date: event.date, time: event.time })}
                     </p>
-                    <p className="text-gray-600">
+                    {/* <p className="text-gray-600">
                       {t('events.mentor', 'Mentor: {{mentor}}', { mentor: event.mentor })}
-                    </p>
+                    </p> */}
                     <p className="text-gray-600">
                       {t('events.location', 'Location: {{location}}', { location: event.location })}
                     </p>
-                    <p className="text-gray-600">
+                    {/* <p className="text-gray-600">
                       {t('events.venue', 'Venue: {{venue}}', { venue: event.venue })}
-                    </p>
+                    </p> */}
                   </div>
                   <button className="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">
                     {t('events.button', 'Click Here')}

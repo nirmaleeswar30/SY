@@ -75,7 +75,15 @@
     "kundalini": "Kundalini"
   },
   
-  
+  "search": {
+    "placeholder": "Search events..."
+  },
+  "view": {
+    "list": "List",
+    "month": "Month",
+    "day": "Day"
+  },
+
   "welcome": {
   "title": "WELCOME TO SAHAJA YOGA",
   "subtitle": "The time has come for all of you to get your self-realisation,",
@@ -83,6 +91,7 @@
   "donate": "For Donation Click Here",
   "sessions": {
     "title": "Daily Free Meditation Sessions",
+    "list": "Session",
     "morning": {
       "title": "Morning Session",
       "time": "6:00 AM - 7:00 AM"
@@ -180,6 +189,7 @@
   "events": {
     
     "title": "Event Schedule 2025",
+    "sectitle": "Upcoming Events",
     "subtitle": "Join us for these transformative events",
     "dateTime": "{{date}}",
     "mentor": "Mentor: {{mentor}}",
@@ -203,6 +213,38 @@
       "november30": "November 30",
       "december25": "December 25"
     },
+    "descriptions": {
+      "mahashivaratri": "28 February to 2 March",
+      "birthday": "19 to 21 March",
+      "rama": "4 to 6 April",
+      "easter": "18 to 20 April",
+      "sahasrara": "2 to 4 May",
+      "adishakti": "6 to 8 June",
+      "guru": "11 to 13 July",
+      "krishna": "22 to 24 August",
+      "ganesha": "29 to 31 August",
+      "navaratri": "26 to 28 September",
+      "diwali": "17 to 19 October",
+      "bhairava": "28 to 30 November",
+      "christmas": "23 to 25 December"
+    },
+    "calenders": {
+      "mahashivaratri": "13/2 Thu, Amavasya: 28/2 Fri, Actual Maha Shivaratri: 26 Feb",
+      "birthday": "Amavasya 28/3 Fri, Purnima 14/3 Fri",
+      "rama": "Amavasya 28/3 Fri, Shri Ram Navami 6/4 Sun",
+      "easter": "Purnima 13/4 Sun, Amavasya 28/4 Mon",
+      "sahasrara": "Purnima 13/5 Tue, Amavasya 28/4 Mon, 27/5 Tue",
+      "adishakti": "Amavasya 25/6 Wed, Purnima 10/6 Wed [11/6 India]",
+      "guru": "Amavasya 24/7 Thu, Purnima 10/7 Thu, Actual Guru Purnima 10/7 Thu",
+      "krishna": "Amavasya 23/8 Sat, Purnima 9/8 Sat",
+      "ganesha": "Purnima 8/9 Mon, Marriages 31/8 Sun",
+      "navaratri": "Amavasya 21/10 Tue, Purnima 7/10 Tue, Ghatasthapana 22/9 Mon, Dassehra 2/10 Thu",
+      "diwali": "Amavasya 21/10 Tue, Purnima 7/10 Tue, Actual Laksmi Puja 21/10",
+      "bhairava": "Amavasya 20/11 Thu, Purnima 5/11 Wed",
+      "christmas": "Amavasya 20/12 Sat, Purnima 5/12 Fri"
+    },
+    
+
     "titles": {
       "mahashivaratri": "Mahashivaratri Puja",
       "birthday": "Birthday Puja",
@@ -266,8 +308,8 @@
     "imageAlt": "Donation"
   },
   "selfRealisation": {
-    "title": "Self Realisation And Kundalini Awakening,",
-    "experienceNow": "Experience Now",
+    "title": "Self Realisation & Kundalini Awakening,",
+    "experienceNow": "Experience Now!",
     "quote1": {
       "text": "Now the time has come; the blossom time has come for many people to get Realisation. They have to get it. This is predicted, the time has come that you all have to get Realisation.",
       "author": "H.H. Shri Mataji Nirmala Devi",

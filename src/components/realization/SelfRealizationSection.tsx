@@ -58,7 +58,7 @@ const SelfRealisationSection: React.FC = () => {
             <div className="aspect-video">
               <iframe 
                 className="w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/l8gfotcxvYA"
+                src="https://res.cloudinary.com/dsobwzsfl/video/upload/v1736267900/sbwsu2a31q0b1bn0gbx8.mp4"
                 title="Sahaja Yoga Meditation Kundalini Awakening"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -66,9 +66,9 @@ const SelfRealisationSection: React.FC = () => {
               />
             </div>
 
-            <p className="text-sm font-semibold text-gray-600">
+            {/* <p className="text-sm font-semibold text-gray-600">
               {t('selfRealisation.videoNote')}
-            </p>
+            </p> */}
           </motion.div>
         </div>
 
