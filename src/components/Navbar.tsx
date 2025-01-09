@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
                                 </svg>
                             </button>
                             {isChakraDropdownOpen && (
-                                <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2"
+                                <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
                                      onMouseLeave={() => setIsChakraDropdownOpen(false)}>
                                     {chakraLinks.map((link, index) => (
                                         <Link
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
                                 </svg>
                             </button>
                             {isResourcesDropdownOpen && (
-                                <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2"
+                                <div className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
                                      onMouseLeave={() => setIsResourcesDropdownOpen(false)}>
                                     {resourceLinks.map((link, index) => (
                                         <Link
