@@ -119,7 +119,7 @@ const SahajaYogaPage = () => {
                 <img
                   src="https://res.cloudinary.com/dr8g09icb/image/upload/v1734203459/MF_035-17__1_1_1_2_sfpvvj.png"
                   alt="Meditation"
-                  className="w-3/4 h-full object-cover rounded-2xl" 
+                  className="w-11/12 h-full object-cover rounded-2xl" 
                 />
               </div>
             </div>
