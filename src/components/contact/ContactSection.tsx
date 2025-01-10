@@ -27,7 +27,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <div ref={ref} className="min-h-screen bg-red-100 flex items-center justify-center p-4">
+    <div ref={ref} id='contact-section' className="min-h-screen bg-red-100 flex items-center justify-center p-4">
       <motion.div
         className="bg-white backdrop-blur-lg rounded-lg p-8 w-full max-w-3xl shadow-xl"
         initial="hidden"

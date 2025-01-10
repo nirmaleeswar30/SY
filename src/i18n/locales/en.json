@@ -188,15 +188,15 @@
   },
   "events": {
     
-    "title": "Pooja Schedule 2025",
-    "sectitle": "Upcoming Pooja",
-    "subtitle": "Join us for these poojas",
+    "title": "Puja Schedule 2025",
+    "sectitle": "Upcoming Puja",
+    "subtitle": "Join us for these pujas",
     "dateTime": "{{date}}",
     "mentor": "Mentor: {{mentor}}",
     "location": "Location: {{location}}",
     "venue": "Venue: {{venue}}",
     "button": "Click Here",
-    "noEvents": "No poojas scheduled for {{month}}.",
+    "noEvents": "No pujas scheduled for {{month}}.",
 
     "dates": {
       "march2": "March 2",
