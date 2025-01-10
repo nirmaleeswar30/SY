@@ -10,7 +10,7 @@ const AboutSection = () => {
   });
 
   return (
-    <section ref={ref} className="flex flex-col lg:flex-row h-screen bg-gray-50">
+    <section ref={ref} id="about-section" className="flex flex-col lg:flex-row h-screen bg-gray-50">
       {/* Left Side: Full-Screen Image */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -19,7 +19,7 @@ const AboutSection = () => {
         className="lg:w-1/2 h-full"
       >
         <img
-          src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          src="https://res.cloudinary.com/dr8g09icb/image/upload/v1736491025/image_8_gk6esb.png"
           alt={t('about.meditation.altText')}
           className="w-full h-full object-cover"
         />
@@ -40,10 +40,6 @@ const AboutSection = () => {
           <p className="text-lg text-gray-600 mb-6 text-justify">
             {t('about.description')}
           </p>
-          
-          <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary-dark transition">
-            {t('about.learnMore')}
-          </button>
         </div>
       </motion.div>
     </section>

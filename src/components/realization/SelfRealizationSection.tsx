@@ -47,18 +47,18 @@ const SelfRealisationSection: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="space-y-6 pt-8 text-lg font-medium"
           >
-            <blockquote className="text-gray-700 italic">
+            <blockquote className="text-gray-700 ">
               <p className="mb-4">{t('selfRealisation.quote1.text')}</p>
-              <footer className="text-sm">
+              {/* <footer className="text-sm">
                 - {t('selfRealisation.quote1.author')}, {t('selfRealisation.quote1.location')}
-              </footer>
+              </footer> */}
             </blockquote>
 
-            <blockquote className="text-gray-700 italic">
+            <blockquote className="text-gray-700 ">
               <p className="mb-4">{t('selfRealisation.quote2.text')}</p>
-              <footer className="text-sm">
+              {/* <footer className="text-sm">
                 - {t('selfRealisation.quote2.author')}, {t('selfRealisation.quote2.location')}
-              </footer>
+              </footer> */}
             </blockquote>
           </motion.div>
 
@@ -115,12 +115,8 @@ const SelfRealisationSection: React.FC = () => {
         {/* Experience Button */}
         <div className="text-center">
           <motion.a
-            href="#"
+            href="/schedule"
             className="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold mt-8 px-8 py-4 rounded-2xl transition-colors duration-300 transform hover:scale-105"
-            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-              e.preventDefault();
-              // Add your self realisation link/function here
-            }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6 }}

@@ -20,23 +20,20 @@ interface Event {
   calender: string;
 }
 
-type ViewMode = 'list' | 'month' | 'day';
-
 const Schedule: React.FC = () => {
   const { t } = useTranslation();
-  const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [displayEvents, setDisplayEvents] = useState<Event[]>([]);
 
   const regularSessions: Session = {
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    morning: ['10:00 AM', '10:00 AM', '10:00 AM', '10:00 AM', '10:00 AM', '10:00 AM', '10:00 AM'],
-    evening: ['6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM']
+    morning: ['5:30 - 6:30 AM', '5:30 - 6:30 AM', '5:30 - 6:30 AM', '5:30 - 6:30 AM', '5:30 - 6:30 AM', '5:30 - 6:30 AM', '5:30 - 6:30 AM'],
+    evening: ['9:00 PM - 9:40 PM', '9:00 PM - 9:40 PM', '9:00 PM - 9:40 PM', '9:00 PM - 9:40 PM', '9:00 PM - 9:40 PM', '9:00 PM - 9:40 PM', '9:00 PM - 9:40 PM']
   };
 
   const newseekers: Session = {
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    evening: ['6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM', '6:00 PM']
+    evening: ['8.00 to 8.30 PM', '8.00 to 8.30 PM', '8.00 to 8.30 PM', '8.00 to 8.30 PM', '8.00 to 8.30 PM', '8.00 to 8.30 PM', '8.00 to 8.30 PM']
   };
 
   const events: Event[] = [
@@ -68,15 +65,8 @@ const Schedule: React.FC = () => {
       );
     }
 
-    // Apply view mode filter
-    if (viewMode === 'month') {
-      filtered = filtered.filter(event => event.month !== '');
-    } else if (viewMode === 'day') {
-      filtered = filtered.filter(event => event.date !== '');
-    }
-
     setDisplayEvents(filtered);
-  }, [searchQuery, viewMode, events]); // Add `events` as a dependency
+  }, [searchQuery, t]); // Add dependencies here
 
   // Animation variants
   const containerVariants = {
@@ -158,21 +148,21 @@ const Schedule: React.FC = () => {
             <table className="w-full">
               <thead className="bg-gradient-to-r from-red-800 to-red-700">
                 <tr>
-                  <th className="p-4 text-left text-white">{t('welcome.sessions.list')}</th>
+                  <th className="p-4 text-center text-white">{t('welcome.sessions.list')}</th>
                   {regularSessions.days.map((day) => (
-                    <th key={day} className="p-4 text-left text-white">
+                    <th key={day} className="p-4 text-center text-white">
                       {t(`days.${day}`)}
                     </th>
                   ))}
-                  <th className="p-4 text-center text-white">{t('welcome.sessions.join')}</th>
+                  <th className="p-4 text-center text-white"></th>
                 </tr>
               </thead>
               <tbody className="bg-white">
                 <motion.tr className="hover:bg-gray-50 transition-colors" variants={tableRowVariants}>
-                  <td className="p-4 font-bold border-t">{t('welcome.sessions.morning.title')}</td>
+                  <td className="p-4 font-bold text-center border-t">{t('welcome.sessions.morning.title')}</td>
                   {regularSessions.morning?.map((time, idx) => (
                     <td key={idx} className="p-4 border-t">
-                      {time}
+                      <span className="block text-center">{time}</span>
                     </td>
                   ))}
                   <td className="p-4 border-t">
@@ -189,10 +179,10 @@ const Schedule: React.FC = () => {
                   </td>
                 </motion.tr>
                 <motion.tr className="hover:bg-gray-50 transition-colors" variants={tableRowVariants}>
-                  <td className="p-4 font-bold border-t">{t('welcome.sessions.evening.title')}</td>
+                  <td className="p-4 font-bold text-center border-t">{t('welcome.sessions.evening.title')}</td>
                   {regularSessions.evening.map((time, idx) => (
                     <td key={idx} className="p-4 border-t">
-                      {time}
+                      <span className="block text-center">{time}</span>
                     </td>
                   ))}
                   <td className="p-4 border-t">
@@ -231,21 +221,21 @@ const Schedule: React.FC = () => {
             <table className="w-full">
               <thead className="bg-gradient-to-r from-red-800 to-red-700">
                 <tr>
-                  <th className="p-4 text-left text-white">{t('welcome.sessions.list')}</th>
+                  <th className="p-4 text-center text-white">{t('welcome.sessions.list')}</th>
                   {newseekers.days.map((day) => (
-                    <th key={day} className="p-4 text-left text-white">
+                    <th key={day} className="p-4 text-center text-white">
                       {t(`days.${day}`)}
                     </th>
                   ))}
-                  <th className="p-4 text-center text-white">{t('welcome.sessions.join')}</th>
+                  <th className="p-4 text-center text-white"></th>
                 </tr>
               </thead>
               <tbody className="bg-white">
                 <motion.tr className="hover:bg-gray-50 transition-colors" variants={tableRowVariants}>
-                  <td className="p-4 font-bold border-t">{t('welcome.sessions.evening.title')}</td>
+                  <td className="p-4 font-bold text-center border-t">{t('welcome.sessions.evening.title')}</td>
                   {newseekers.evening.map((time, idx) => (
                     <td key={idx} className="p-4 border-t">
-                      {time}
+                      <span className="block text-center">{time}</span>
                     </td>
                   ))}
                   <td className="p-4 border-t">
@@ -294,26 +284,6 @@ const Schedule: React.FC = () => {
               />
               <Search className="absolute left-4 top-3.5 h-5 w-5 text-gray-400" />
             </div>
-
-            <div className="flex gap-2">
-              <div className="flex rounded-lg overflow-hidden border border-gray-300">
-                {['List', 'Month', 'Day'].map((mode) => (
-                  <motion.button
-                    key={mode}
-                    onClick={() => setViewMode(mode.toLowerCase() as ViewMode)}
-                    className={`px-4 py-2 ${
-                      viewMode === mode.toLowerCase()
-                        ? 'bg-red-100 text-red-800'
-                        : 'text-gray-600 hover:bg-gray-50'
-                    } transition-colors`}
-                    whileHover={{ backgroundColor: viewMode === mode.toLowerCase() ? '#FEE2E2' : '#F9FAFB' }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    {t(`view.${mode.toLowerCase()}`)}
-                  </motion.button>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           {/* Events List */}
@@ -328,22 +298,29 @@ const Schedule: React.FC = () => {
                 animate="visible"
                 exit="hidden"
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">{event.month}</h3>
                 <motion.div
                   className="flex flex-col md:flex-row gap-6 bg-white rounded-xl shadow-md overflow-hidden"
                   whileHover="hover"
                 >
-                  <div className="p-6 text-center border-b md:border-b-0 md:border-r border-gray-200 md:w-24">
+                  {/* Responsive Date and Day Section */}
+                  <div
+                    className="p-6 text-center border-b md:border-b-0 md:border-r border-gray-200 flex-shrink-0"
+                    style={{ minWidth: '6rem', maxWidth: '12rem' }}
+                  >
                     <div className="text-2xl font-bold text-gray-900">{event.date}</div>
                     <div className="text-sm text-gray-500">{event.day}</div>
                   </div>
 
+                  {/* Event Details Section */}
                   <div className="flex-1 p-6">
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">{event.title}</h4>
-                    <p className="text-gray-600 text-xl font-bold mb-2">Places: {event.location}</p>
-                    <p className="text-gray-600 text-xl font-bold mb-2">Time: {event.time}</p>
-                    <p className="text-gray-600 text-xl font-bold mb-2">Seminar Dates: {event.description}</p>
-                    <div className="text-red-800 text-xl font-extrabold mb-2">Panchang calendar: {event.calender}</div>
+                    <p className="text-gray-600 text-lg font-bold mb-2">Places: {event.location}</p>
+                    <p className="text-gray-600 text-lg font-bold mb-2">Time: {event.time}</p>
+                    <p className="text-gray-600 text-lg font-bold mb-2">Seminar Dates: {event.description}</p>
+                    <div className="text-red-800 text-lg font-extrabold mb-2">Panchang calendar: {event.calender}</div>
+                    <div className="text-gray-600 text-lg font-bold whitespace-nowrap overflow-hidden text-ellipsis sm:text-base">
+                      {event.month}
+                    </div>
                   </div>
                 </motion.div>
               </motion.div>

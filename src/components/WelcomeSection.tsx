@@ -8,12 +8,15 @@ const SahajaYogaPage = () => {
 
   const meditationSessions = [
     { type: t('welcome.sessions.morning.title'), time: t('welcome.sessions.morning.time') },
-    { type: t('welcome.sessions.evening.title'), time: t('welcome.sessions.evening.time') }
+    { type: t('welcome.sessions.evening.title'), time: t('welcome.sessions.evening.time') },
+  ];
+  const beginnerSessions = [
+    { type: t('welcome.sessions.beginner.evening.title'), time: t('welcome.sessions.beginner.evening.time') }
   ];
 
   // Filter only the evening session for New Seekers
-  const eveningSession = meditationSessions.filter(
-    (session) => session.type === t('welcome.sessions.evening.title')
+  const eveningSession = beginnerSessions.filter(
+    (session) => session.type === t('welcome.sessions.beginner.evening.title')
   );
 
   useEffect(() => {
@@ -23,6 +26,13 @@ const SahajaYogaPage = () => {
     
     setTimeout(handleVisibility, 100);
   }, []);
+
+  const scrollToDonationSection = () => {
+    const donationSection = document.getElementById('donation-section');
+    if (donationSection) {
+      donationSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -34,17 +44,17 @@ const SahajaYogaPage = () => {
             <div className={`space-y-6 transition-all duration-1000 transform 
               ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'}`}>
               <div className="space-y-3">
-                <h1 className="text-3xl font-bold text-red-900 animate-fade-in hover:scale-105 transition-transform duration-300">
+                <h1 className="text-4xl font-bold text-red-900 animate-fade-in hover:scale-105 transition-transform duration-300">
                   {t('welcome.title')}
                 </h1>
-                <p className="text-gray-700 text-sm leading-relaxed transform hover:translate-x-2 transition-transform duration-300">
+                <p className="text-gray-700 text-lg leading-relaxed transform hover:translate-x-2 transition-transform duration-300">
                   {t('welcome.subtitle')} {t('welcome.description')}
                 </p>
               </div>
 
               {/* Daily Sessions */}
               <div className="space-y-3">
-                <h2 className="text-xl font-semibold text-red-800 hover:scale-105 transition-transform duration-300">
+                <h2 className="text-3xl font-semibold text-red-800 hover:scale-105 transition-transform duration-300">
                   {t('welcome.sessions.title')}
                 </h2>
                 <div className="space-y-2">
@@ -58,11 +68,11 @@ const SahajaYogaPage = () => {
                       style={{ transitionDelay: `${index * 200}ms` }}
                     >
                       <div>
-                        <h3 className="font-medium text-sm">{session.type}</h3>
-                        <p className="text-gray-600 text-xs">{session.time}</p>
+                        <h3 className="font-medium text-base">{session.type}</h3>
+                        <p className="text-gray-600 text-sm">{session.time}</p>
                       </div>
                       <button className="bg-red-900 text-white px-4 py-1.5 rounded-full hover:bg-red-800 
-                        transition-all duration-300 hover:shadow-lg hover:scale-105 transform text-sm">
+                        transition-all duration-300 hover:shadow-lg hover:scale-105 transform text-base">
                         {t('welcome.sessions.join')}
                       </button>
                     </div>
@@ -72,7 +82,7 @@ const SahajaYogaPage = () => {
 
               {/* New Seekers Section */}
               <div className="space-y-3">
-                <h2 className="text-xl font-semibold text-red-800 hover:scale-105 transition-transform duration-300">
+                <h2 className="text-3xl font-semibold text-red-800 hover:scale-105 transition-transform duration-300">
                   {t('welcome.sessions.beginner.title')}
                 </h2>
                 <div className="space-y-2">
@@ -86,11 +96,11 @@ const SahajaYogaPage = () => {
                       style={{ transitionDelay: `${index * 200}ms` }}
                     >
                       <div>
-                        <h3 className="font-medium text-sm">{session.type}</h3>
-                        <p className="text-gray-600 text-xs">{session.time}</p>
+                        <h3 className="font-medium text-base">{session.type}</h3>
+                        <p className="text-gray-600 text-sm">{session.time}</p>
                       </div>
                       <button className="bg-red-900 text-white px-4 py-1.5 rounded-full hover:bg-red-800 
-                        transition-all duration-300 hover:shadow-lg hover:scale-105 transform text-sm">
+                        transition-all duration-300 hover:shadow-lg hover:scale-105 transform text-base">
                         {t('welcome.sessions.join')}
                       </button>
                     </div>
@@ -99,10 +109,13 @@ const SahajaYogaPage = () => {
               </div>
 
               {/* Donation Button */}
-              <button className={`w-full bg-red-900 text-white py-3 rounded-lg hover:bg-red-800 
-                transition-all duration-500 hover:shadow-lg hover:scale-105 transform text-sm
-                ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
-                style={{ transitionDelay: '600ms' }}>
+              <button 
+                className={`w-full bg-red-900 text-white py-3 rounded-lg hover:bg-red-800 
+                  transition-all duration-500 hover:shadow-lg hover:scale-105 transform text-sm
+                  ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
+                style={{ transitionDelay: '600ms' }}
+                onClick={scrollToDonationSection} // Add this line
+              >
                 {t('welcome.donate')}
               </button>
             </div>

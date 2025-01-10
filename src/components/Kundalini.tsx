@@ -60,17 +60,12 @@ const Kundalini = () => {
           variants={fadeInUp}
         >
           <motion.h1
-            className="text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600"
+            className="text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600 leading-tight"
             variants={fadeInUp}
           >
             {t('kundalini.title')}
           </motion.h1>
-          <motion.h2
-            className="text-2xl font-medium text-red-500"
-            variants={fadeInUp}
-          >
-            {t('kundalini.subtitle')}
-          </motion.h2>
+          {/* Subtitle removed */}
         </motion.div>
 
         <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-8 space-y-6 lg:space-y-0">

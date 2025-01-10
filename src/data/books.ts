@@ -39,7 +39,7 @@ export const books: Book[] = [
     downloadUrl: '/books/tamil-pamphlet-1.pdf',
     description: 'A pamphlet in Tamil.',
     genre: 'Pamphlet',
-    category: 'Tamil Pamphlets'
+    category: 'Bhajan Books'
   },
   {
     id: '5',

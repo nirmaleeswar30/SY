@@ -47,11 +47,11 @@ const BenefitsSection: React.FC = () => {
   };
 
   return (
-    <section 
+    <section id="benefits-section"
       ref={ref}
       className="bg-[#fdf6e9] p-8"
     >
-      <div className="max-w-7xl mx-auto mt-12">
+      <div className="max-w-7xl mx-auto mt-12 mb-12">
         <motion.h1 
           className="text-4xl font-bold text-center text-red-600 mb-8"
           initial={{ y: -50, opacity: 0 }}
@@ -96,24 +96,6 @@ const BenefitsSection: React.FC = () => {
               </p>
             </motion.div>
           ))}
-        </motion.div>
-
-        <motion.div 
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          <motion.button 
-            className="bg-red-700 text-white px-8 py-3 rounded-xl hover:bg-red-800 transition-colors duration-300"
-            whileHover={{ 
-              scale: 1.05,
-              boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
-            }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {t('benefits.viewMoreButton')}
-          </motion.button>
         </motion.div>
       </div>
     </section>

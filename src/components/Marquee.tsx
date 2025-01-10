@@ -5,7 +5,7 @@ const Marquee = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-orange-500 font-medium italic text-white py-2 overflow-hidden">
+    <div className="bg-orange-500 font-medium italic text-white py-1 overflow-hidden">
       <div className="flex">
         <motion.div
           animate={{

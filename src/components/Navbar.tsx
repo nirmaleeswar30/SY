@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="bg-red-900">
-            <div className="max-w-screen-2xl flex items-center justify-between mx-auto px-4 py-2">
+            <div className="max-w-screen-2xl flex items-center justify-between mx-auto px-4 py-4">
                 {/* Logo */}
                 <div className="flex items-center">
                     <Link to="/">

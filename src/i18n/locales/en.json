@@ -5,7 +5,7 @@
     "centers": "Our Centers",
     "clearence": "Clearence",
     "contact": "Contact",
-    "chakras": "7 Chakras & Nadis",
+    "chakras": "7 Chakras & 3 Nadis",
     "resources": "Resources"
   },
   "resources": {
@@ -26,11 +26,11 @@
     "balance": "Balance",
     "ancientKnowledge": "Ancient Knowledge of our Roots - Chakras Qualities",
     "subtleSystemDescription": "Inside every human being there is a network of nerves and sensory organs that interprets the outside physical world. At the same time, within us resides a subtle system of channels (nadis) and centers of energy (chakras) which look after our physical, intellectual, emotional and spiritual being. Each of the seven chakras has several spiritual qualities. These qualities are intact within us, and even though they might not always be manifest, they can never be destroyed. When the Kundalini is awakened, these qualities start manifesting spontaneously and express themselves in our life. Thus, through regular meditation, we become automatically very dynamic, creative, confident and at the same time very humble, loving and compassionate. It is a process which starts to develop by itself when the Kundalini rises and starts to nourish our chakras.",
-    "threeNadis": "The Nadi(s) or The Three Channels",
+    "threeNadis": "The Nadis or The Three Channels",
     "threeNadisDescription": "The human subtle system rides on the Three Channels – the Left, The Right, & The Central. The left channel (blue), or the Left Sympathetic Nervous System, corresponds to our past, emotions, desires. Its termination is the superego, which is the storehouse of all our memories, habits and conditionings. The right channel (yellow), or the Right Sympathetic Nervous System, corresponds to our actions and planning, to our physical and mental activity. Its termination is the ego, which gives us the idea of 'I'-ness, the sense that we are separate from the world. The central channel, or the Para-Sympathetic Nervous System, is the channel of ascent, it is the power which sustains our evolution and guides us, consciously or unconsciously, towards the higher awareness of the Sahastrara (seventh chakra).",
-    "sevenChakras": "The Seven Chakras or The Plexuses",
-    "sevenChakrasDescription": "The human subtle system is governed with the help of Seven Chakras or the Plexuses. Defined as Chakras in the ancient texts, these are now recognised as the nodal points, or Plexuses on the nervous system by the medical science. The plexuses govern the physical functions of the connected organs within the body. On the spiritual side of these plexuses, as Chakras, they also govern and enhance one or more behavioral and emotional qualities in the human being. These seven chakras which are as follows:",
-    "mooladhara": "1. Mooladhara Chakra: Innocence or Purity",
+    "sevenChakras": "The Seven Chakras or The Seven Plexuses",
+    "sevenChakrasDescription": "The human subtle system is governed with the help of Seven Chakras or the Seven Plexuses. Defined as Chakras in the ancient texts, these are now recognised as the nodal points, or Plexuses on the nervous system by the medical science. The plexuses govern the physical functions of the connected organs within the body. On the spiritual side of these plexuses, as Chakras, they also govern and enhance one or more behavioral and emotional qualities in the human being. These seven chakras which are as follows:",
+    "mooladhara": "1. Mooladhara Chakra: Innocence and Purity",
     "mooladharaContent": "The first chakra is situated below the sacrum bone (This place of Sacrum Bone is Called Mooladhara - in which resides the Kundalini, and it is different from Mooladhara Chakra). The main aspect of Mooladhara Chakra is the innocence. Innocence is the quality by which we experience pure, child-like joy, without the limitations of prejudice or conditionings. Innocence gives us dignity, balance, and a tremendous sense of direction and purpose in life. It is nothing but simplicity, purity and joy. It is the inner wisdom that is ever present in the little children, and gets sometimes clouded by our modern lifestyles. But it is a quality which exists eternally within us and cannot be destroyed, waiting to be manifest as pure joy when the Kundalini rises.",
     "mooladharaQualities": "Innocence is the quality by which we experience pure, child-like joy, without the limitations of prejudice or conditionings.",
     "mooladharaBenefits": "Innocence gives us dignity, balance, and a tremendous sense of direction and purpose in life.",
@@ -54,8 +54,8 @@
     "anahatBenefits": "The heart chakra manifests in the center (at the level of the sternum bone) as complete security and confidence.",
     "anahatAssessment": "On the physical level, this chakra looks after our heart and lungs - if affected, it can cause asthma or various heart conditions.",
     "anahatBalance": "All our worries, doubts and fears are destroyed when the heart chakra is fully enlightened by the Kundalini.",
-    "vishuddhi": "5. Vishuddhi Chakra: Diplomacy and Playful Detachment",
-    "vishuddhiContent": "The fifth chakra is the chakra of diplomacy, of pure relationships with others, and of playful detachment. It removes all our guilts and remorses when it is opened by the Kundalini, and gives us a kind and compassionate voice. The tendencies to dominate others or to feel dominated by others, the feelings of superiority or inferiority and all jealousies are removed when this chakra is nourished by the Kundalini. Also, the Vishuddhi is the chakra which gives us the connection with the whole, enabling us to feel our oneness and the fact that we are all part and parcel of the whole.",
+    "vishuddhi": "5. Vishuddhi Chakra: Diplomacy and Witness State",
+    "vishuddhiContent": "The fifth chakra is the chakra of diplomacy, of pure relationships with others, and of witness state. It removes all our guilts and remorses when it is opened by the Kundalini, and gives us a kind and compassionate voice. The tendencies to dominate others or to feel dominated by others, the feelings of superiority or inferiority and all jealousies are removed when this chakra is nourished by the Kundalini. Also, the Vishuddhi is the chakra which gives us the connection with the whole, enabling us to feel our oneness and the fact that we are all part and parcel of the whole.",
     "vishuddhiQualities": "It removes all our guilts and remorses when it is opened by the Kundalini, and gives us a kind and compassionate voice.",
     "vishuddhiBenefits": "The tendencies to dominate others or to feel dominated by others, the feelings of superiority or inferiority and all jealousies are removed when this chakra is nourished by the Kundalini.",
     "vishuddhiAssessment": "Also, the Vishuddhi is the chakra which gives us the connection with the whole, enabling us to feel our oneness and the fact that we are all part and parcel of the whole.",
@@ -94,17 +94,17 @@
     "list": "Session",
     "morning": {
       "title": "Morning Session",
-      "time": "6:00 AM - 7:00 AM"
+      "time": "5:30 AM - 6:30 AM"
     },
     "evening": {
       "title": "Evening Session",
-      "time": "7:00 PM - 8:00 PM"
+      "time": "9:00 PM - 9:40 PM"
     },
     "beginner": {
       "title": "For New Seekers",
       "evening": {
         "title": "Evening Session",
-        "time": "7:00 PM - 8:00 PM"
+        "time": "8:00 PM - 8:30 PM"
       }
     },
     "join": "Join",
@@ -146,7 +146,7 @@
   },
   "benefits": {
     "title": "Benefits of Sahaja Yoga",
-    "description": "Shri Mataji Nirmala Devi transformed lives through en masse Kundalini Awakening. For more than forty years, Shri Mataji traveled globally, offering free public lectures and the experience of self-realisation to all, regardless of race, caste, creed, religion or financial status. She not only enabled people to pass this valuable experience to others free of cost, but taught them the meditation technique necessary to sustain it known as Sahaja Yoga.",
+    "description": "Shri Mataji Nirmala Devi transformed lives through collective Kundalini Awakening. For more than forty years, Shri Mataji traveled globally, offering free public lectures and the experience of self-realisation to all, regardless of race, caste, creed, religion or financial status. She not only enabled people to pass this valuable experience to others free of cost, but taught them the meditation technique necessary to sustain it known as Sahaja Yoga.",
     "viewMoreButton": "CLICK HERE TO VIEW MORE BENEFITS",
     "cards": {
       "mental": {
@@ -188,15 +188,15 @@
   },
   "events": {
     
-    "title": "Event Schedule 2025",
-    "sectitle": "Upcoming Events",
-    "subtitle": "Join us for these transformative events",
+    "title": "Pooja Schedule 2025",
+    "sectitle": "Upcoming Pooja",
+    "subtitle": "Join us for these poojas",
     "dateTime": "{{date}}",
     "mentor": "Mentor: {{mentor}}",
     "location": "Location: {{location}}",
     "venue": "Venue: {{venue}}",
     "button": "Click Here",
-    "noEvents": "No events scheduled for {{month}}.",
+    "noEvents": "No poojas scheduled for {{month}}.",
 
     "dates": {
       "march2": "March 2",
@@ -261,7 +261,7 @@
       "christmas": "Christmas Puja"
     },
     "times": {
-      "morning": "10:00 AM"
+      "morning": "5.30 to 6.30 AM"
     },
     "mentors": {
       "sahajayoga": "Sahaja Yoga"
@@ -308,7 +308,7 @@
     "imageAlt": "Donation"
   },
   "selfRealisation": {
-    "title": "Self Realisation & Kundalini Awakening,",
+    "title": "Self Realisation & Kundalini Awakening in 10 Minutes,",
     "experienceNow": "Experience Now!",
     "quote1": {
       "text": "Now the time has come; the blossom time has come for many people to get Realisation. They have to get it. This is predicted, the time has come that you all have to get Realisation.",
@@ -321,7 +321,7 @@
       "location": "24.07.1992, Public Talk, Paris Gaveau France"
     },
     "videoNote": "Note: The above video is just an animated representation of the awakening of Kundalini energy, to experience. Please, Click the below to experience your Self Realisation.",
-    "experienceButton": "CLICK HERE TO EXPERIENCE YOUR SELF REALISATION"
+    "experienceButton": "CLICK HERE TO KNOW MORE ABOUT SELF REALISATION"
   },
   "publicPrograms": {
     "title": "Contact Us For Free Public Programs",
@@ -505,7 +505,7 @@
     "title": "Books",
     "noResults": "No results found",
     "categories": {
-      "Tamil Pamphlets": "Tamil Pamphlets",
+      "Bhajan Books": "Bhajan Books",
       "Tamil Books": "Tamil Books",
       "English Books": "English Books"
     }

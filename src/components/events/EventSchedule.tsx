@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calendar } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 type Event = {
   date: string;
@@ -17,10 +18,14 @@ const months = [
   "July", "August", "September", "October", "November", "December",
 ];
 
-// Move events definition inside the component to access translation function
 const EventSchedule: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [selectedMonth, setSelectedMonth] = useState<string>(months[0]);
+
+  const handleScheduleClick = () => {
+    navigate('/schedule');
+  };
 
   // Define events object with translations
   const events: Record<string, Event[]> = {
@@ -207,17 +212,14 @@ const EventSchedule: React.FC = () => {
                     <p className="text-gray-600">
                       {t('events.dateTime', '{{date}} at {{time}}', { date: event.date, time: event.time })}
                     </p>
-                    {/* <p className="text-gray-600">
-                      {t('events.mentor', 'Mentor: {{mentor}}', { mentor: event.mentor })}
-                    </p> */}
                     <p className="text-gray-600">
                       {t('events.location', 'Location: {{location}}', { location: event.location })}
                     </p>
-                    {/* <p className="text-gray-600">
-                      {t('events.venue', 'Venue: {{venue}}', { venue: event.venue })}
-                    </p> */}
                   </div>
-                  <button className="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">
+                  <button 
+                    onClick={handleScheduleClick}
+                    className="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition"
+                  >
                     {t('events.button', 'Click Here')}
                   </button>
                 </div>

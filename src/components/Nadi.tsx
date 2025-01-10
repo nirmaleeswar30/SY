@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 interface NadiContent {
   title: string;
   content: string[];
+  image: string;
 }
 
 interface NadiData {
@@ -17,31 +18,46 @@ const Nadis = () => {
 
   const nadiContent: NadiData = {
     pingala: {
-      title: t('nadis.pingala.title'),
+      title: t('nadis.pingala.title') || 'Pingala Nadi', // Fallback title
       content: [
-        t('nadis.pingala.content.1'),
-        t('nadis.pingala.content.2'),
-        t('nadis.pingala.content.3')
-      ]
+        t('nadis.pingala.content.0') || 'Your right energy channel (Pingala nadi), also called the sun channel...',
+        t('nadis.pingala.content.1') || 'Action and planning are essential qualities associated with the right energy channel...',
+        t('nadis.pingala.content.2') || 'In summary, your right energy channel influences your ability to plan and take action...'
+      ],
+      image: 'https://res.cloudinary.com/dodaypz5o/image/upload/v1736262011/nadis-inside-img-00003_1_bopw6l.jpg'
     },
     ida: {
-      title: t('nadis.ida.title'),
+      title: t('nadis.ida.title') || 'Ida Nadi', // Fallback title
       content: [
-        t('nadis.ida.content.1'),
-        t('nadis.ida.content.2'),
-        t('nadis.ida.content.3')
-      ]
+        t('nadis.ida.content.0') || 'Your left energy channel (called Ida nadi in Sanskrit), also known as the moon channel...',
+        t('nadis.ida.content.1') || 'Joy is an essential quality associated with the left energy channel...',
+        t('nadis.ida.content.2') || 'If you have a problem with your left energy channel, you may experience emotional extremes...'
+      ],
+      image: 'https://res.cloudinary.com/dodaypz5o/image/upload/v1736262011/nadis-inside-img-002_1_mqcoph.jpg'
     },
     sushumna: {
-      title: t('nadis.sushumna.title'),
+      title: t('nadis.sushumna.title') || 'Sushumna Nadi', // Fallback title
       content: [
-        t('nadis.sushumna.content.1'),
-        t('nadis.sushumna.content.2'),
-        t('nadis.sushumna.content.3')
-      ]
+        t('nadis.sushumna.content.0') || 'Your central energy channel (Sushumna nadi), also called the middle path...',
+        t('nadis.sushumna.content.1') || 'Your entire subtle energy system is integrated in the Sahastrara chakra...',
+        t('nadis.sushumna.content.2') || 'It may sound complex, but understanding your energy channels is quite simple...'
+      ],
+      image: 'https://res.cloudinary.com/dodaypz5o/image/upload/v1736262012/Central-Channel-SY-929x1024_1_po379q.jpg'
     }
   };
 
+  // Debugging: Log unresolved translation keys
+  useEffect(() => {
+    Object.keys(nadiContent).forEach((nadi) => {
+      nadiContent[nadi].content.forEach((paragraph, index) => {
+        if (paragraph.startsWith('nadis.')) {
+          console.warn(`Missing translation for key: ${paragraph}`);
+        }
+      });
+    });
+  }, [nadiContent]);
+
+  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -62,9 +78,6 @@ const Nadis = () => {
     }
   };
 
-  console.log('Active Tab:', activeTab);
-  console.log('Nadi Content:', nadiContent);
-
   return (
     <motion.div
       className="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen"
@@ -73,18 +86,22 @@ const Nadis = () => {
       transition={{ duration: 0.8 }}
     >
       <main className="max-w-7xl mx-auto px-4 py-12">
+        {/* Title Section */}
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600">
+          <h1 className="text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600 leading-tight">
             {t('nadis.title')}
           </h1>
-          <h2 className="text-2xl text-red-500 font-medium">{t('nadis.subtitle')}</h2>
+          <h2 className="text-2xl text-red-500 font-medium leading-tight">
+            {t('nadis.subtitle')}
+          </h2>
         </motion.div>
 
+        {/* Tabs for Nadis */}
         <div className="flex flex-wrap justify-center gap-6 mb-12">
           {Object.keys(nadiContent).map((nadi) => (
             <motion.button
@@ -103,10 +120,11 @@ const Nadis = () => {
           ))}
         </div>
 
+        {/* Content for Active Tab */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden"
+            className="bg-white rounded-2xl shadow-xl overflow-visible"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -115,6 +133,7 @@ const Nadis = () => {
           >
             <div className="p-8">
               <div className="flex flex-col lg:flex-row gap-12">
+                {/* Image and Title */}
                 <motion.div
                   className="lg:w-1/3"
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -123,36 +142,24 @@ const Nadis = () => {
                 >
                   <div className="space-y-6">
                     <motion.img
-                      src="https://www.sahajayoga.org.in/new_images/subtle_image.jpg"
-                      alt="Subtle System"
+                      src={nadiContent[activeTab].image}
+                      alt={`${nadiContent[activeTab].title} Image`}
                       className="w-full h-auto rounded-xl shadow-lg"
                       whileHover={{ scale: 1.02 }}
                       layoutId={`nadi-image-${activeTab}`}
                     />
-                    <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600">
+                    <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-pink-600 leading-tight">
                       {nadiContent[activeTab].title}
                     </h2>
                   </div>
                 </motion.div>
 
+                {/* Content */}
                 <motion.div
                   className="lg:w-2/3"
                   variants={contentVariants}
                 >
                   <div className="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-xl">
-                    {activeTab === 'pingala' && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="mb-8"
-                      >
-                        <h3 className="text-xl font-bold text-red-700 mb-4">{t('nadis.pingala.intro')}</h3>
-                        <p className="text-gray-700 leading-relaxed">
-                          {t('nadis.pingala.introDescription')}
-                        </p>
-                      </motion.div>
-                    )}
-
                     <div className="space-y-6">
                       {nadiContent[activeTab].content.map((paragraph, index) => (
                         <motion.p
