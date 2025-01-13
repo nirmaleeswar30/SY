@@ -2,11 +2,13 @@ import React, { useState, useRef } from 'react';
 import { Play, Pause } from 'lucide-react';
 
 interface AudioCardProps {
+  id: string;
   title: string;
+  description: string;
   audioUrl: string;
 }
 
-const AudioCard = ({ title, audioUrl }: AudioCardProps) => {
+const AudioCard = ({ id, title, description, audioUrl }: AudioCardProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -42,15 +44,18 @@ const AudioCard = ({ title, audioUrl }: AudioCardProps) => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-1.02">
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-        <button
-          onClick={togglePlay}
-          className="p-3 rounded-full transition-colors bg-red-800 text-white hover:bg-red-800"
-        >
-          {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-        </button>
+    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+      <div className="flex flex-col gap-2 mb-4">
+        <div className="flex items-center justify-between">
+          <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+          <button
+            onClick={togglePlay}
+            className="p-3 rounded-full transition-colors bg-red-800 text-white hover:bg-red-800"
+          >
+            {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+          </button>
+        </div>
+        <p className="text-gray-600 text-sm">{description}</p>
       </div>
 
       <div
@@ -59,7 +64,7 @@ const AudioCard = ({ title, audioUrl }: AudioCardProps) => {
         className="h-2 bg-gray-200 rounded-full cursor-pointer"
       >
         <div
-          className={`h-full bg-red-800 rounded-full transition-all duration-150`}
+          className="h-full bg-red-800 rounded-full transition-all duration-150"
           style={{ width: `${progress}%` }}
         />
       </div>

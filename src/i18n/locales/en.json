@@ -470,7 +470,95 @@
   "Mr_Murali": "Mr. Murali",
   "Mrs_Jayashankari": "Mrs. Jayashankari"
 },
-
+"book": {
+    "titles": {
+      "theThirdAdvent": "The Third Advent",
+      "theTenthIncarnation": "The Tenth Incarnation",
+      "theAscent": "The Ascent",
+      "theLastJudgement": "The Last Judgement",
+      "cookingWithLove": "Cooking with Love",
+      "theLightOfTheWorld": "The Light of the World Excerpts from various speeches",
+      "theLightOfTheKoran": "The Light of the Koran Flore Descieux",
+      "sahajYoga": "Sahaj Yoga",
+      "shriKalki": "Shri Kalki",
+      "realisedSaints": "Realised Saints",
+      "theFaceOfGod": "The Face of God",
+      "sahajaYogaMeditation": "Sahaja Yoga Meditation A Beginners Guide 2021",
+      "raisingChildrenInSahajaYoga": "Raising Children in Sahaja Yoga Excerpts from various speeches",
+      "nirmalFragranceCollective": "Nirmal Fragrance Collective",
+      "sahajChildrensColouringBook": "Sahaj Childrens Colouring Book",
+      "myMemoirs": "My Memoirs",
+      "menAndWomenInSahajaYoga": "Men and Women in Sahaja Yoga Excerpts from various speeches",
+      "metaModernEra": "Meta Modern Era",
+      "musicAndSahajyoga": "Music & Sahajyoga",
+      "marriageAndSahajaYoga": "Marriage and Sahaja Yoga Excerpts from various speeches.",
+      "lalBahadurShastri": "Lal Bahadur Shastri",
+      "medicalScienceEnlightened": "Medical Science Enlightened",
+      "greatWomenOfIndia": "Great Women of India Yogi Mahajan",
+      "jailBreak": "Jail Break Yogi Mahajan",
+      "joyOfSpreading": "Joy of spreading Excerpts from various Speeches",
+      "hope": "Hope",
+      "islamEnlightened": "Islam Enlightened",
+      "gitaEnlightened": "Gita Enlightened",
+      "creationTheEternalPlay": "Creation The Eternal Play",
+      "educationEnlightened": "Education Enlightened Excerpts from various speeches",
+      "divineCoolBreeze1989": "1989 Divine Cool Breeze",
+      "diseasesAndRemedies": "Diseases & Remedies",
+      "corruption": "Corruption",
+      "newMillenniumFulfillsAncientProphecies": "New Millennium Fulfills Ancient Prophecies",
+      "english1008TreatmentsSahajaYoga": "English 1008 Treatments Sahaja Yoga"
+    },
+    "authors": {
+      "gDeKalbermatten": "G DE Kalbermatten",
+      "yogiMahajan": "Yogi Mahajan",
+      "hhShirMatajiNirmaladev": "H.H.Shir Mataji Nirmaladev",
+      "hhShriMatajiNirmaladevi": "H.H.Shri Mataji Nirmaladevi",
+      "saritaKeetley": "Sarita Keetley",
+      "babaMama": "Baba Mama",
+      "drArunApte": "Dr. Arun Apte",
+      "cpSrivastava": "C.P. Srivastava",
+      "jUmeshCRai": "J Umesh C. Rai",
+      "vladimirMikhanovsky": "Vladimir Mikhanovsky",
+      "javedKhan": "Javed Khan"
+    },
+    "descriptions": {
+      "theThirdAdvent": "A story of decadence and excess.",
+      "theTenthIncarnation": "A story of racial injustice and loss of innocence.",
+      "theAscent": "A story of racial injustice and loss of innocence.",
+      "theLastJudgement": "A story of racial injustice and loss of innocence.",
+      "cookingWithLove": "A classic romance novel.",
+      "theLightOfTheWorld": "A classic romance novel.",
+      "theLightOfTheKoran": "A classic romance novel.",
+      "sahajYoga": "A classic romance novel.",
+      "shriKalki": "A classic romance novel.",
+      "realisedSaints": "A classic romance novel.",
+      "theFaceOfGod": "A classic romance novel.",
+      "sahajaYogaMeditation": "A classic romance novel.",
+      "raisingChildrenInSahajaYoga": "A classic romance novel.",
+      "nirmalFragranceCollective": "A classic romance novel.",
+      "sahajChildrensColouringBook": "A classic romance novel.",
+      "myMemoirs": "A classic romance novel.",
+      "menAndWomenInSahajaYoga": "A classic romance novel.",
+      "metaModernEra": "A classic romance novel.",
+      "musicAndSahajyoga": "A classic romance novel.",
+      "marriageAndSahajaYoga": "A classic romance novel.",
+      "lalBahadurShastri": "A classic romance novel.",
+      "medicalScienceEnlightened": "A classic romance novel.",
+      "greatWomenOfIndia": "A classic romance novel.",
+      "jailBreak": "A classic romance novel.",
+      "joyOfSpreading": "A classic romance novel.",
+      "hope": "A classic romance novel.",
+      "islamEnlightened": "A classic romance novel.",
+      "gitaEnlightened": "A classic romance novel.",
+      "creationTheEternalPlay": "A classic romance novel.",
+      "educationEnlightened": "A classic romance novel.",
+      "divineCoolBreeze1989": "A classic romance novel.",
+      "diseasesAndRemedies": "A classic romance novel.",
+      "corruption": "A classic romance novel.",
+      "newMillenniumFulfillsAncientProphecies": "A classic romance novel.",
+      "english1008TreatmentsSahajaYoga": "A classic romance novel."
+    }
+  },
 "nadis": {
     "title": "Energy Channels",
     "subtitle": "Understanding the Three Nadis",
@@ -568,25 +656,22 @@
     "notFound": "Gallery not found"
   },
   "homePageBhajans": {
-    "title": "Explore Video Categories"
+    "title": "Bhajan and Instrumental Library"
   },
   "categories": {
     "instrumental": {
       "title": "Instrumental",
-      "description": "Top entertainment videos from around the world"
+      "description": "Sahaja Meditation Instrumental Music"
     },
     "tamil": {
       "title": "Tamil",
-      "description": "Latest music videos and performances"
+      "description": "Tamil Sahaja Bhajans"
     },
     "hindi": {
       "title": "Hindi",
-      "description": "Gaming highlights and walkthroughs"
-    },
-    "english": {
-      "title": "English",
-      "description": "Photography tutorials and tips"
+      "description": "Hindi Sahaja Bhajans"
     }
+    
   },
   "category": {
     "notFound": "Category not found",
@@ -595,23 +680,23 @@
   },
   "videos": {
     "1": {
-      "title": "Top 10 Movie Scenes of 2024",
-      "description": "The most iconic movie scenes from this year"
+      "title": "SAHAJA YOGA MUSIC MEDITATION BY FLUTE",
+      "description": "Jai Shree Mataji"
     },
     "2": {
-      "title": "Behind the Scenes: Latest Blockbuster",
-      "description": "Exclusive behind-the-scenes footage"
+      "title": "Sahajayoga instrumental meditation music",
+      "description": "Hariprasad Chaurasiya playing flute in front of shri mataji"
     },
     "3": {
-      "title": "Live Concert Highlights",
-      "description": "Best moments from recent concerts"
+      "title": "Sahaja Yoga Instrumental Bhajans Live",
+      "description": "Jai Shree Mataji"
     },
     "4": {
-      "title": "New Music Friday Playlist",
-      "description": "Latest music releases this week"
+      "title": "Instrumental Parameshwari Bhagavati Nirmala (Sahajyoga Bhajan)",
+      "description": "Sahajyoga Today’s Mahayoga"
     },
     "5": {
-      "title": "Pro Gaming Moments",
+      "title": "Gnana Nirmalame | Tamil Bhajan",
       "description": "Amazing plays from professional gamers"
     },
     "6": {
@@ -627,6 +712,93 @@
       "description": "Master your camera settings"
     }
   },
+    "audioLibrary": {
+      "title": "Sahaja Yoga Audio Library",
+      "searchPlaceholder": "Search audios...",
+      "noResults": "No audios found"
+    },
+    "audio": {
+      "1": {
+        "title": "Sahaja Miracles Part:1",
+        "description": "My Sahaja Yoga experiences and wonders, First day experience"
+      },
+      "2": {
+        "title": "Sahaja Miracles Part:2",
+        "description": "My Sahaja Yoga experiences and wonders, (Twisting the mind)"
+      },
+      "3": {
+        "title": "Sahaja Miracles Part:3",
+        "description": "My Sahaja Yoga experiences and wonders, (House building project)"
+      },
+      "4": {
+        "title": "Sahaja Miracles Part:4",
+        "description": "My Sahaja Yoga experiences and wonders, (House warming)"
+      },
+      "5": {
+        "title": "Sahaja Miracles Part:5",
+        "description": "My Sahaja Yoga experiences and wonders, (Change in lifestyle)"
+      },
+      "6": {
+        "title": "Sahaja Miracles Part:6",
+        "description": "My Sahaja Yoga experiences and wonders, (Helping Golia)"
+      },
+      "7": {
+        "title": "Sahaja Miracles Part:7",
+        "description": "My Sahaja Yoga experiences and wonders, (Baravkar visit)"
+      },
+      "8": {
+        "title": "Sahaja Miracles Part:8",
+        "description": "My Sahaja Yoga experiences and wonders, (Sahaja Yoga - the form of love)"
+      },
+      "9": {
+        "title": "Sahaja Miracles Part:9",
+        "description": "My Sahaja Yoga experiences and wonders, (Saving the job)"
+      },
+      "10": {
+        "title": "Sahaja Miracles Part:10",
+        "description": "My Sahaja Yoga experiences and wonders, (Mother's duty of care)"
+      },
+      "11": {
+        "title": "Sahaja Miracles Part:11",
+        "description": "My Sahaja Yoga experiences and wonders, (The punished military officer)"
+      },
+      "12": {
+        "title": "Sahaja Miracles Part:12",
+        "description": "My Sahaja Yoga experiences and wonders, (Child started walking)"
+      },
+      "13": {
+        "title": "Sahaja Miracles Part:13",
+        "description": "My Sahaja Yoga experiences and wonders, (Work at Pratishthan)"
+      },
+      "14": {
+        "title": "Sahaja Miracles Part:14",
+        "description": "My Sahaja Yoga experiences and wonders, (Mother giving pension)"
+      },
+      "15": {
+        "title": "Sahaja Miracles Part:15",
+        "description": "My Sahaja Yoga experiences and wonders, (Significant progress in orders)"
+      },
+      "16": {
+        "title": "Sahaja Miracles Part:16",
+        "description": "My Sahaja Yoga experiences and wonders, (Transfer to Meghalaya)"
+      },
+      "17": {
+        "title": "Sahaja Miracles Part:17",
+        "description": "My Sahaja Yoga experiences and wonders, (Accident-1)"
+      },
+      "18": {
+        "title": "Sahaja Miracles Part:18",
+        "description": "My Sahaja Yoga experiences and wonders, (Accident-2)"
+      },
+      "19": {
+        "title": "Sahaja Miracles Part:19",
+        "description": "My Sahaja Yoga experiences and wonders, (Receiving award)"
+      },
+      "20": {
+        "title": "Sahaja Miracles Part:20",
+        "description": "My Sahaja Yoga experiences and wonders, (Change in Bangalore)"
+      }
+    },
 
   "headerTitle": "Inspiring Speeches",
   "headerSubtitle": "Discover powerful speeches that changed the world"

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ImageModal } from './ImageModal';
-import { useTranslation } from 'react-i18next'; // Import the translation hook
+import { useTranslation } from 'react-i18next';
 
 interface GalleryGridProps {
   images: string[];
@@ -8,36 +8,24 @@ interface GalleryGridProps {
 }
 
 export function GalleryGrid({ images, title }: GalleryGridProps) {
-  const { t } = useTranslation(); // Use the translation hook
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <>
-      <div className="grid grid-cols-12 auto-rows-auto gap-1">
-        {/* Hero image */}
-        <div 
-          className="col-span-8 row-span-2 cursor-pointer"
-          onClick={() => setSelectedImage(images[0])}
-        >
-          <img
-            src={images[0]}
-            alt={`${title} - Hero`}
-            className="w-full h-auto"
-          />
-        </div>
-
-        {/* Gallery images */}
-        {images.slice(1).map((image, index) => (
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {images.map((image, index) => (
           <div 
             key={index}
-            className="col-span-4 cursor-pointer"
+            className="aspect-[3/4] group relative cursor-pointer overflow-hidden"
             onClick={() => setSelectedImage(image)}
           >
             <img
               src={image}
-              alt={`${title} - Detail ${index + 1}`}
-              className="w-full h-auto"
+              alt={`${title} - ${index + 1}`}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
+            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
         ))}
       </div>

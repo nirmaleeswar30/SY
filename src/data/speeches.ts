@@ -84,23 +84,142 @@ async function fetchYouTubeData(videoId: string): Promise<{ title: string; durat
 export const speeches: Speech[] = [
   {
     id: 1,
-    speaker: "Martin Luther King Jr.",
-    youtubeUrl: "https://www.youtube.com/watch?v=N3J2JRQg040",
-    title: "Loading...",
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/watch?v=wmVYxiNcI4E",
+    title: "Guru Puja Excerpts",
     duration: "--:--"
   },
   {
     id: 2,
-    speaker: "Steve Jobs",
-    youtubeUrl: "https://www.youtube.com/watch?v=IpFX2vq8HKw",
-    title: "Loading...",
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/watch?v=JtFjpMToNp8",
+    title: "It is Important to Open Our Hearts - 27-12-1989 Talk to Yogis Pune",
     duration: "--:--"
   },
   {
     id: 3,
-    speaker: "Brené Brown",
-    youtubeUrl: "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
-    title: "Loading...",
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/watch?v=DjE3vWEm-os",
+    title: "Self Realisation Steps By Shri Mataji",
+    duration: "--:--"
+  },
+  {
+    id: 4,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/watch?v=f8zDB8ORiMI",
+    title: "Short Description of 7 Chakras",
+    duration: "--:--"
+  },
+  {
+    id: 5,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/watch?v=IQEcPNAPJ74",
+    title: "1989 Shri Radha Krishna Puja Excerpt(Importance of Friendship)",
+    duration: "--:--"
+  },
+  {
+    id: 6,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/watch?v=-VEGiPCZiK8",
+    title: "1987 Makar Sankranti Puja",
+    duration: "--:--"
+  },
+  {
+    id: 7,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/sjEmN6hWREc",
+    title: "Introduction to Sahaja Yoga | சஹஜ யோகா - முகவுரை | Tamil Subtitles",
+    duration: "--:--"
+  },
+  {
+    id: 8,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/cTMWxdVQq_c",
+    title: "Thoughtless Awareness | எண்ணங்களற்ற விழிப்புணர்வு - Tamil Subtitles",
+    duration: "--:--"
+  },
+  {
+    id: 9,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/jGPsbGm1iqg",
+    title: "1977 Jan 27 Attention and Joy",
+    duration: "--:--"
+  },
+  {
+    id: 10,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/71RsWgCyWwA",
+    title: "அமைதி பற்றி ஸ்ரீ மாதாஜியின் அறிவுரை | Excerpts About Peace - Shri Mataji Nirmala Devi",
+    duration: "--:--"
+  },
+  {
+    id: 11,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/ZSKHVpeGMhU",
+    title: "What are vibrations? - நுண்ணதிர்வுகள் என்றால் என்ன?",
+    duration: "--:--"
+  },
+  {
+    id: 12,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/RXOLMQsQ6ic",
+    title: "IMPORTANCE OF EVERYDAY MEDITATION AND FOOTSOAKING - Tamil Subtitles",
+    duration: "--:--"
+  },
+  {
+    id: 13,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/yamtZlJnyS8",
+    title: "Meaning of Aum - Tamil subtitles",
+    duration: "--:--"
+  },
+  {
+    id:14,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/GVmOKP-UZRE",
+    title: "Importance of Meditaiton HD",
+    duration: "--:--"
+  },
+  {
+    id: 15,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/bYq6nXPilMo",
+    title: "1981 Sahasrara Chakra",
+    duration: "--:--"
+  },
+  {
+    id: 16,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/Z_rUwrMtiCg",
+    title: "Vishuddhi Chakra - விஷுத்தி சக்கரம் | Tamil Subtitles",
+    duration: "--:--"
+  },
+  {
+    id: 17,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/ht473xqlbkI",
+    title: "1989 0723 Importance of Pure Attention | தூய கவனத்தின் முக்கியத்துவம்",
+    duration: "--:--"
+  },
+  {
+    id: 18,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/iY7vwiknV-8",
+    title: "1991 Shri Bhavasagar Puja Excerpt | Tamil Subtiles",
+    duration: "--:--"
+  },
+  {
+    id: 19,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/jzAGC-b9MVQ",
+    title: "Relax God Is With you - Tamil Subtitles | கவலைப்படாதீர்கள் கடவுள் உங்களுடன் இருக்கிறார்",
+    duration: "--:--"
+  },
+  {
+    id: 20,
+    speaker: "H.H Shri Mataji Nirmala Devi",
+    youtubeUrl: "https://www.youtube.com/embed/Z9mVdmFCaWw",
+    title: "1983 Heart Chakra With Tamil Subtitles",
     duration: "--:--"
   }
 ];
